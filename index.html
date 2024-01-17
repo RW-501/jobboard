@@ -220,13 +220,13 @@ hr {
     </header>
 
 
-on the index page i want to call checkUserLogin(); then         if (userLoggedIn === 'true' && auth ) {
-hide Dashbor
-
-
 	
     <div id="photo-area"></div>
+	
+<!-- Add Job button -->
+<button id="quickAddBTN" onclick="openPopup('addJobPopup')">Add Job</button>
 
+	
     <div id="views">
         <div id="mainContainer">
             <!-- ... Your existing HTML content ... -->
@@ -248,10 +248,115 @@ hide Dashbor
 
 
 
-<style>
 
-</style>
 
+<!-- Add Job Popup -->
+<div class="popup" id="addJobPopup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('addJobPopup')">&times;</span>
+    <h3>Add Job</h3>
+    <label for="companyName">Company Name:</label>
+    <input type="text" id="companyName" placeholder="Enter company name" required>
+
+    <label for="jobPosition">Job Position:</label>
+    <input type="text" id="jobPosition" placeholder="Enter job position" required>
+
+ <label for="stateDropdown">Select State:</label>
+  <select id="stateDropdown" onchange="populateCities()">
+      <!-- Add your state options here -->
+<option value="Alabama">Alabama</option>
+<option value="Alaska">Alaska</option>
+<option value="Arizona">Arizona</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+<option value="Colorado">Colorado</option>
+<option value="Connecticut">Connecticut</option>
+<option value="Delaware">Delaware</option>
+<option value="Florida">Florida</option>
+<option value="Georgia">Georgia</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Idaho">Idaho</option>
+<option value="Illinois">Illinois</option>
+<option value="Indiana">Indiana</option>
+<option value="Iowa">Iowa</option>
+<option value="Kansas">Kansas</option>
+<option value="Kentucky">Kentucky</option>
+<option value="Louisiana">Louisiana</option>
+<option value="Maine">Maine</option>
+<option value="Maryland">Maryland</option>
+<option value="Massachusetts">Massachusetts</option>
+<option value="Michigan">Michigan</option>
+<option value="Minnesota">Minnesota</option>
+<option value="Mississippi">Mississippi</option>
+<option value="Missouri">Missouri</option>
+<option value="Montana">Montana</option>
+<option value="Nebraska">Nebraska</option>
+<option value="Nevada">Nevada</option>
+<option value="New Hampshire">New Hampshire</option>
+<option value="New Jersey">New Jersey</option>
+<option value="New Mexico">New Mexico</option>
+<option value="New York">New York</option>
+<option value="North Carolina">North Carolina</option>
+<option value="North Dakota">North Dakota</option>
+<option value="Ohio">Ohio</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+<option value="Pennsylvania">Pennsylvania</option>
+<option value="Rhode Island">Rhode Island</option>
+<option value="South Carolina">South Carolina</option>
+<option value="South Dakota">South Dakota</option>
+<option value="Tennessee">Tennessee</option>
+<option value="Texas">Texas</option>
+<option value="Utah">Utah</option>
+<option value="Vermont">Vermont</option>
+<option value="Virginia">Virginia</option>
+<option value="Washington">Washington</option>
+<option value="West Virginia">West Virginia</option>
+<option value="Wisconsin">Wisconsin</option>
+<option value="Wyoming">Wyoming</option>
+    </select>
+
+  <label for="cityDropdown">Select City:</label>
+  <select id="cityDropdown">
+    <!-- City options will be populated dynamically -->
+  </select>
+
+  <div id="zipCodeDisplay"></div>
+
+    <label for="jobCategory">Job Category:</label>
+    <select id="jobCategory">
+      <!-- Add your job category options here -->
+<option value="Software Development">Software Development</option>
+<option value="Graphic Design">Graphic Design</option>
+<option value="Customer Support">Customer Support</option>
+<option value="Marketing">Marketing</option>
+<option value="Data Entry">Data Entry</option>
+<option value="Sales">Sales</option>
+<option value="Writing">Writing</option>
+<option value="Human Resources">Human Resources</option>
+<option value="Finance">Finance</option>
+<option value="Project Management">Project Management</option>
+<option value="Legal">Legal</option>
+<option value="Education">Education</option>
+<option value="Healthcare">Healthcare</option>
+<option value="Engineering">Engineering</option>
+<option value="Other">Other</option>
+    </select>
+
+    <label for="description">Description:</label>
+    <textarea id="description" placeholder="Enter job description" required></textarea>
+
+    <label for="applicationLink">Application Link:</label>
+    <input type="url" id="applicationLink" placeholder="Enter application link" required>
+
+    <button onclick="submitJob()">Submit Job</button>
+  </div>
+</div>
+
+
+
+
+	
 
 <div class="popup" id="registerPopup">
   <div class="popup-content">
@@ -293,6 +398,95 @@ hide Dashbor
     <!-- Your scripts go here -->
     <script>
 
+    // Fetch data from the JSON file
+    fetch('locations.json')
+      .then(response => response.json())
+      .then(data => {
+        const stateDropdown = document.getElementById('stateDropdown');
+/*
+        // Populate state options
+        data.states.forEach(state => {
+          const stateOption = document.createElement('option');
+          stateOption.value = state.name;
+          stateOption.text = state.name;
+          stateDropdown.appendChild(stateOption);
+        });
+	*/
+      })
+      .catch(error => console.error('Error fetching data:', error));
+
+    // Function to populate city dropdown based on the selected state
+    function populateCities() {
+      const selectedState = document.getElementById('stateDropdown').value;
+      const cityDropdown = document.getElementById('cityDropdown');
+      const zipCodeDisplay = document.getElementById('zipCodeDisplay');
+
+      // Find the selected state in the JSON data
+      const selectedStateData = data.states.find(state => state.name === selectedState);
+
+      // Clear existing options
+      cityDropdown.innerHTML = '';
+      zipCodeDisplay.innerHTML = '';
+
+      // Populate city options
+      selectedStateData.cities.forEach(city => {
+        const cityOption = document.createElement('option');
+        cityOption.value = city.name;
+        cityOption.text = city.name;
+        cityDropdown.appendChild(cityOption);
+      });
+
+      // Display zip codes for the first city (optional)
+      displayZipCodes(selectedStateData.cities[0]);
+    }
+
+    // Function to display zip codes for the selected city
+    function displayZipCodes(selectedCity) {
+      const zipCodeDisplay = document.getElementById('zipCodeDisplay');
+      zipCodeDisplay.innerHTML = `Zip Codes: ${selectedCity.zipCodes.join(', ')}`;
+    }
+
+
+
+  function submitJob() {
+    // Add your logic to submit the job details
+    // Retrieve values from input fields and perform the necessary actions
+    // For example: 
+    const companyName = document.getElementById('companyName').value;
+    const jobPosition = document.getElementById('jobPosition').value;
+    const state = document.getElementById('stateDropdown').value;
+    const city = document.getElementById('cityDropdown').value;
+    const jobCategory = document.getElementById('jobCategory').value;
+    const description = document.getElementById('description').value;
+    const applicationLink = document.getElementById('applicationLink').value;
+
+    // You can now use these values to add the job posting to your system or database
+    console.log('Job details submitted:', {
+      companyName,
+      jobPosition,
+      state,
+      city,
+      jobCategory,
+      description,
+      applicationLink
+    });
+
+    // Close the popup after submission
+    closePopup('addJobPopup');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+	    
 // Add these functions to your existing JavaScript
 function openPopup(popupId) {
     const popup = document.getElementById(popupId);
@@ -408,6 +602,15 @@ function loginWithGoogle() {
         });
 }
 
+  function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+  }
+
+  function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'none';
+  }
 
 
 // Call checkUserLogin on page load
@@ -430,11 +633,13 @@ function updateButtonVisibility() {
     registerButton.style.display = 'none';
     loginButton.style.display = 'none';
     logoutButton.style.display = 'block';
+    quickAddBTN.style.display = 'block';
   } else {
     // User is logged out, show register and login buttons, hide logout button
     registerButton.style.display = 'block';
     loginButton.style.display = 'block';
     logoutButton.style.display = 'none';
+    quickAddBTN.style.display = 'none';
   }
 }
 
