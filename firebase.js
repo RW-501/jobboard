@@ -22,48 +22,7 @@ const firestore = firebase.firestore();
 
 
 
-// Check if Firebase is already loaded and Firestore is available
-if (typeof firebase !== 'undefined' && typeof firebase.firestore === 'function') {
-/*    // Initialize Firebase and get a reference to the Firestore database
-    firebase.initializeApp(firebaseConfig);
-    const firestore = firebase.firestore();
 
-    // Access the necessary Firebase functions
-    const auth = firebase.auth();
-    const GoogleAuthProvider = firebase.auth.GoogleAuthProvider;
-    const createUserWithEmailAndPassword = firebase.auth().createUserWithEmailAndPassword;
-    const signInWithPopup = firebase.auth().signInWithPopup;
-
-    // Enable Firestore offline persistence if needed
-    if (firebase.firestore().enablePersistence) {
-        firebase.firestore().enablePersistence({ synchronizeTabs: false })
-            .catch((err) => {
-                console.error("Error enabling Firestore offline persistence:", err);
-            });
-    }*/
-
-    console.log('Firebase found.');
-} else {
-    // If Firebase scripts are not loaded, dynamically load them
-    console.log('Firebase scripts not found.');
-/*
-    const firebaseAppScript = document.createElement('script');
-    firebaseAppScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js';
-
-    const firestoreScript = document.createElement('script');
-    firestoreScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js';
-
-    const firebaseAuthScript = document.createElement('script');
-    firebaseAuthScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js';
-
-    // Append the script elements to the document's head
-    document.head.appendChild(firebaseAppScript);
-    document.head.appendChild(firestoreScript);
-    document.head.appendChild(firebaseAuthScript);
-*/
-    // You may also want to listen for the 'load' event on these scripts
-    // before initializing Firebase to ensure they are fully loaded.
-}
 var userID = "";
 function checkUserLogin() {
     return new Promise((resolve, reject) => {
@@ -76,14 +35,14 @@ function checkUserLogin() {
             const unsubscribe = auth.onAuthStateChanged((user) => {
                 unsubscribe(); // Unsubscribe to avoid memory leaks
 
-                if (user) {
-    localStorage.setItem('userLoggedIn', 'true');
-                    // User is logged in
-                     userID = user.uid;
-                    console.log('User is logged in with UID:', userID);
-                    resolve(userID);
-                    // You can also perform actions here when the user is logged in.
-                } 
+   if (user) {
+          localStorage.setItem('userLoggedIn', 'true');
+          // User is logged in
+          userID = user.uid;
+          console.log('User is logged in with UID:', userID);
+          resolve(userID);
+          // You can also perform actions here when the user is logged in.
+        }
  
             });
         } else {
@@ -93,7 +52,7 @@ function checkUserLogin() {
                     console.error('No user is signed in');
                     resolve(null);
                     // You can also perform actions here when the user is logged out.
-           window.location.href = '/user';
+           window.location.href = '/RemoteJobs/dashboard';
                 
 
         }
@@ -106,7 +65,7 @@ function logoutUser() {
     localStorage.setItem('userLoggedIn', 'false');
     // Optionally, sign the user out from Firebase if needed
     firebase.auth().signOut().then(() => {
-	        window.location.href = '/'; // Replace 'login.html' with your login page URL
+	        window.location.href = '/RemoteJobs'; // Replace 'login.html' with your login page URL
 
         console.log('User logged out successfully.');
     }).catch((error) => {
