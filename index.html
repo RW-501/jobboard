@@ -554,23 +554,45 @@ let jobPostData = "";
     const applicationLink = document.getElementById('applicationLink').value;
 
 
+ var jobType = document.getElementById('jobType').value;
 
+  // Get the state of each checkbox for additional job types
+  var contract = document.getElementById('contract').checked;
+  var fullTime = document.getElementById('fullTime').checked;
+  var partTime = document.getElementById('partTime').checked;
+  var freelance = document.getElementById('freelance').checked;
+  var temporary = document.getElementById('temporary').checked;
+  var internship = document.getElementById('internship').checked;
+
+  // Get the state of each checkbox for experience levels
+  var entryLevel = document.getElementById('entryLevel').checked;
+  var midLevel = document.getElementById('midLevel').checked;
+  var seniorLevel = document.getElementById('seniorLevel').checked;
 
 
    // Job post data
-    const jobPostData = {
-      companyName: companyName,
-      jobPosition: jobPosition,
-      state: state,
-      city: city,
-      jobCategory: jobCategory,
-  jobType: jobType, // Add the jobType field
-      description: description,
-      applicationLink: applicationLink,
-      userId: userId,
-      dateTime: formattedDate,
-      // Add any other fields you need
-    };
+  jobPostData = {
+  companyName: companyName,
+  jobPosition: jobPosition,
+  state: state,
+  city: city,
+  jobCategory: jobCategory,
+  jobType: jobType,
+  contract: contract, // Add the contract field
+  fullTime: fullTime, // Add the fullTime field
+  partTime: partTime, // Add the partTime field
+  freelance: freelance, // Add the freelance field
+  temporary: temporary, // Add the temporary field
+  internship: internship, // Add the internship field
+  entryLevel: entryLevel, // Add the entryLevel field
+  midLevel: midLevel, // Add the midLevel field
+  seniorLevel: seniorLevel, // Add the seniorLevel field
+  description: description,
+  applicationLink: applicationLink,
+  userId: userId,
+  dateTime: formattedDate,
+};
+
 
   
 addJobPost();
