@@ -209,8 +209,65 @@
 
 
 
+<style>
+/* Add this CSS styling for the pop-ups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
-<!-- Update your login and register pop-ups -->
+.popup-content {
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+</style>
+
+<!-- Your existing pop-ups with the added styling -->
 <div class="popup" id="registerPopup">
     <div class="popup-content">
         <span class="close" onclick="closePopup('registerPopup')">&times;</span>
@@ -234,7 +291,6 @@
         <button onclick="loginAnonymously()">Login Anonymously</button>
     </div>
 </div>
-
 
 
 
