@@ -70,8 +70,9 @@ nav ul li a:hover {
     color: #ddd;
 }
 
-#quickAddBTN{
-	        margin: 2% auto;
+#quickAddBTN {
+    margin: 2% auto;
+    display: block;
 }
         /* Add your additional styles here */
 
@@ -245,6 +246,41 @@ width: 100%;
 <button id="quickAddBTN" onclick="openPopup('addJobPopup')">Add Job</button>
     <div id="welcome-area"></div>
 
+<!-- HTML for buttons -->
+<button onclick="sortByDate()">Sort by Date</button>
+<button onclick="filterByJobType('Remote')">Filter by Remote Jobs</button>
+<button onclick="filterByJobType('Hybrid')">Filter by Hybrid Jobs</button>
+
+    <div class="form-group">
+
+<!-- Job Types Buttons -->
+<div class="button-group">
+  <button onclick="toggleJobType('fullTime')">Full Time</button>
+  <button onclick="toggleJobType('partTime')">Part Time</button>
+</div>
+
+<!-- Job Categories Buttons -->
+<div class="button-group">
+  <button onclick="toggleJobCategory('contract')">Contract</button>
+  <button onclick="toggleJobCategory('freelance')">Freelance</button>
+  <button onclick="toggleJobCategory('temporary')">Temporary</button>
+  <button onclick="toggleJobCategory('internship')">Internship</button>
+</div>
+
+<!-- Experience Levels Buttons -->
+<div class="button-group">
+  <button onclick="toggleExperienceLevel('entryLevel')">Entry Level</button>
+  <button onclick="toggleExperienceLevel('midLevel')">Mid Level</button>
+  <button onclick="toggleExperienceLevel('seniorLevel')">Senior Level</button>
+</div>
+    </div>
+	
+<!-- Display area for job posts -->
+<div id="jobPostsContainer"></div>
+
+
+
+	
 	
     <div id="views">
         <div id="mainContainer">
@@ -480,6 +516,84 @@ width: 100%;
     <!-- Your scripts go here -->
     <script>
 
+// Function to get job posts from Firestore
+async function getJobPosts() {
+  try {
+    const jobPostsRef = firestore.collection('Job_Posts');
+    const snapshot = await jobPostsRef.get();
+    
+    const jobPosts = [];
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      jobPosts.push({ id: doc.id, ...data });
+    });
+
+    return jobPosts;
+  } catch (error) {
+    console.error('Error getting job posts:', error);
+    return [];
+  }
+}
+
+
+
+// Function to render job posts
+function renderJobPosts(jobPosts) {
+  const jobPostsContainer = document.getElementById('jobPostsContainer');
+  jobPostsContainer.innerHTML = ''; // Clear previous content
+
+  // Loop through job posts and create HTML elements
+  jobPosts.forEach(post => {
+    const postElement = document.createElement('div');
+    postElement.textContent = `Company: ${post.companyName}, Position: ${post.jobPosition}, Date: ${post.dateTime}, Job Type: ${post.jobType}`;
+    jobPostsContainer.appendChild(postElement);
+  });
+}
+
+// Function to sort job posts by date (descending)
+function sortByDate() {
+  const sortedByDate = jobPosts.slice().sort((a, b) => b.dateTime.localeCompare(a.dateTime));
+  renderJobPosts(sortedByDate);
+}
+
+// Function to filter job posts by job type
+function filterByJobType(jobType) {
+  const filteredByJobType = jobPosts.filter(post => post.jobType === jobType);
+  renderJobPosts(filteredByJobType);
+}
+
+// Fetch job posts and initially render them
+getJobPosts().then(initialJobPosts => {
+  jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
+  renderJobPosts(jobPosts);
+});
+
+
+
+
+
+// Function to toggle job type
+function toggleJobType(jobType) {
+  jobPostData[jobType] = !jobPostData[jobType];
+  console.log(`${jobType} toggled: ${jobPostData[jobType]}`);
+}
+
+// Function to toggle job category
+function toggleJobCategory(jobCategory) {
+  jobPostData[jobCategory] = !jobPostData[jobCategory];
+  console.log(`${jobCategory} toggled: ${jobPostData[jobCategory]}`);
+}
+
+// Function to toggle experience level
+function toggleExperienceLevel(experienceLevel) {
+  jobPostData[experienceLevel] = !jobPostData[experienceLevel];
+  console.log(`${experienceLevel} toggled: ${jobPostData[experienceLevel]}`);
+}
+
+
+
+
+	    
 
     // Function to populate city dropdown based on the selected state
 // Declare data variable in a higher scope
