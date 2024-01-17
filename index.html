@@ -608,12 +608,21 @@ function loginWithGoogle() {
         });
 }
 
-  function openPopup(popupId) {
+function openPopup(popupId) {
+    // Close all popups
+    const allPopups = document.querySelectorAll('.popup');
+    allPopups.forEach(popup => {
+        popup.style.display = 'none';
+    });
+
+    // Open the specified popup
     const popup = document.getElementById(popupId);
     popup.style.display = 'block';
-	    updateButtonVisibility();
 
-  }
+    // Update button visibility as needed
+    updateButtonVisibility();
+}
+
 
   function closePopup(popupId) {
     const popup = document.getElementById(popupId);
@@ -639,12 +648,16 @@ function updateButtonVisibility() {
   const logoutButton = document.getElementById('logoutBTN');
 
   if (userLoggedIn === 'true' && auth.currentUser) {
+	      console.log('User is logged in.');
+
     // User is logged in, hide register and login buttons, show logout button
     registerButton.style.display = 'none';
     loginButton.style.display = 'none';
     logoutButton.style.display = 'block';
     quickAddBTN.style.display = 'block';
   } else {
+	      console.log('User is not logged in.');
+
     // User is logged out, show register and login buttons, hide logout button
     registerButton.style.display = 'block';
     loginButton.style.display = 'block';
