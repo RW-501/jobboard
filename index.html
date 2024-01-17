@@ -418,6 +418,9 @@ hr {
 
 
     // Function to populate city dropdown based on the selected state
+// Declare data variable in a higher scope
+let data;
+
 function populateCities() {
   const stateDropdown = document.getElementById('stateDropdown');
   const selectedState = stateDropdown.value;
@@ -425,10 +428,12 @@ function populateCities() {
   const zipCodeDisplay = document.getElementById('zipCodeDisplay');
 
   // Fetch data from the JSON file only if it's not already fetched
-  if (!stateDropdown.dataset.fetched) {
+  if (!data) {
     fetch('locations.json')
       .then(response => response.json())
-      .then(data => {
+      .then(jsonData => {
+        data = jsonData;
+
         // Populate state options
         data.states.forEach(state => {
           const stateOption = document.createElement('option');
@@ -437,30 +442,31 @@ function populateCities() {
           stateDropdown.appendChild(stateOption);
         });
 
-        // Mark the dropdown as fetched
-        stateDropdown.dataset.fetched = true;
+        // Call populateCities again after fetching data
+        populateCities();
       })
       .catch(error => console.error('Error fetching data:', error));
+  } else {
+    // Find the selected state in the JSON data
+    const selectedStateData = data.states.find(state => state.name === selectedState);
+
+    // Clear existing options
+    cityDropdown.innerHTML = '';
+    zipCodeDisplay.innerHTML = '';
+
+    // Populate city options
+    selectedStateData.cities.forEach(city => {
+      const cityOption = document.createElement('option');
+      cityOption.value = city.name;
+      cityOption.text = city.name;
+      cityDropdown.appendChild(cityOption);
+    });
+
+    // Display zip codes for the first city (optional)
+    displayZipCodes(selectedStateData.cities[0]);
   }
-
-  // Find the selected state in the JSON data
-  const selectedStateData = data.states.find(state => state.name === selectedState);
-
-  // Clear existing options
-  cityDropdown.innerHTML = '';
-  zipCodeDisplay.innerHTML = '';
-
-  // Populate city options
-  selectedStateData.cities.forEach(city => {
-    const cityOption = document.createElement('option');
-    cityOption.value = city.name;
-    cityOption.text = city.name;
-    cityDropdown.appendChild(cityOption);
-  });
-
-  // Display zip codes for the first city (optional)
-  displayZipCodes(selectedStateData.cities[0]);
 }
+
 
 
     // Function to display zip codes for the selected city
