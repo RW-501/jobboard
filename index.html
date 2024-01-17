@@ -88,20 +88,35 @@
             width: 90%;
         }
 
-        .tab-button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-        .tab-button:hover {
-            background-color: #555;
-        }
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
         /* Add your additional form styles here */
 
@@ -167,6 +182,9 @@
             </ul>
         </nav>
     </header>
+<!-- Modify your login and register buttons to trigger pop-ups -->
+<button onclick="openPopup('loginPopup')">Login</button>
+<button onclick="openPopup('registerPopup')">Register</button>
 
     <div id="photo-area"></div>
 
@@ -189,15 +207,149 @@
         </div>
     </footer>
 
-    <div class="mainMessage-box" id="mainMessageBox">
-        <div class="mainMessage-content">
-            <p id="mainMessageText">Your message here</p>
-            <button id="mainCloseButton">Close</button>
-        </div>
-    </div>
 
+
+
+<!-- Update your login and register pop-ups -->
+<div class="popup" id="registerPopup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+        <h3>Register</h3>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button onclick="registerWithEmailPassword()">Register with Email</button>
+        <button onclick="registerWithGoogle()">Register with Google</button>
+        <button onclick="registerAnonymously()">Register Anonymously</button>
+    </div>
+</div>
+
+<div class="popup" id="loginPopup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('loginPopup')">&times;</span>
+        <h3>Login</h3>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="loginWithEmailPassword()">Login with Email</button>
+        <button onclick="loginWithGoogle()">Login with Google</button>
+        <button onclick="loginAnonymously()">Login Anonymously</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+	
     <!-- Your scripts go here -->
     <script>
+
+// Add these functions to your existing JavaScript
+function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+}
+
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'none';
+}
+
+
+
+// Add these functions to your existing JavaScript
+
+function registerAnonymously() {
+    firebase.auth().signInAnonymously()
+        .then((userCredential) => {
+            // Handle successful anonymous registration
+            console.log('Anonymous registration successful:', userCredential);
+            closePopup('registerPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Anonymous registration failed:', error.message);
+        });
+}
+
+function registerWithEmailPassword() {
+    const email = document.getElementById('register-email').value;
+    const password = document.getElementById('register-password').value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            // Handle successful email/password registration
+            console.log('Email/password registration successful:', userCredential);
+            closePopup('registerPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Email/password registration failed:', error.message);
+        });
+}
+
+function registerWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider)
+        .then((userCredential) => {
+            // Handle successful Google registration
+            console.log('Google registration successful:', userCredential);
+            closePopup('registerPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Google registration failed:', error.message);
+        });
+}
+
+function loginAnonymously() {
+    firebase.auth().signInAnonymously()
+        .then((userCredential) => {
+            // Handle successful anonymous login
+            console.log('Anonymous login successful:', userCredential);
+            closePopup('loginPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Anonymous login failed:', error.message);
+        });
+}
+
+function loginWithEmailPassword() {
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            // Handle successful email/password login
+            console.log('Email/password login successful:', userCredential);
+            closePopup('loginPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Email/password login failed:', error.message);
+        });
+}
+
+function loginWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider)
+        .then((userCredential) => {
+            // Handle successful Google login
+            console.log('Google login successful:', userCredential);
+            closePopup('loginPopup');
+        })
+        .catch((error) => {
+            // Handle errors
+            console.error('Google login failed:', error.message);
+        });
+}
+
+
+	    
         // Your JavaScript code goes here
     </script>
 </body>
