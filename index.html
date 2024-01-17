@@ -624,7 +624,8 @@ document.getElementById('jobType').onchange = function() {
     cityArea.style.display = 'none';
   }
 };
-</script>
+
+    
 
 
 
@@ -804,7 +805,9 @@ function updateButtonVisibility() {
   } else {
 
 	    if (userLoggedIn === 'true' ||  auth.currentUser) {
-welcome-area.innerHTML = "Welcome Back";
+		      const welcomeArea = document.getElementById('welcome-area');
+
+welcomeArea.innerHTML = "Welcome Back";
 	      console.log('Ready To Login, Welcome Back');
     registerButton.style.display = 'none';
     loginButton.style.display = 'block';
