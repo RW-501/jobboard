@@ -51,6 +51,8 @@ nav ul {
     list-style: none;
     text-align: center;
     display: flex; /* Add this line to make the list items flex items */
+            cursor: pointer;
+
 }
 
 nav ul li {
@@ -191,7 +193,11 @@ width: 100%;
             align-items: center;
             text-align: center;
         }
+.welcome-area{
+            margin: 10px 0;
+            text-align: center;
 
+}
         #mainMessageText {
             margin: 10px 0;
         }
@@ -234,10 +240,10 @@ width: 100%;
 
 
 	
-    <div id="photo-area"></div>
 	
 <!-- Add Job button -->
 <button id="quickAddBTN" onclick="openPopup('addJobPopup')">Add Job</button>
+    <div id="welcome-area"></div>
 
 	
     <div id="views">
@@ -695,7 +701,7 @@ function updateButtonVisibility() {
   } else {
 
 	    if (userLoggedIn === 'true' ||  auth.currentUser) {
-
+welcome-area.innerHTML = "Welcome Back";
 	      console.log('Ready To Login, Welcome Back');
     registerButton.style.display = 'none';
     loginButton.style.display = 'block';
