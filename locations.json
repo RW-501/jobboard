@@ -1,1 +1,3181 @@
+{
+  "states": [
+{
+  "name": "Alabama",
+  "cities": [
+    {
+      "name": "Birmingham",
+      "zipCodes": ["35203", "35213", "35222", "35209", "35205"]
+    },
+    {
+      "name": "Montgomery",
+      "zipCodes": ["36104", "36109", "36116", "36108", "36107"]
+    },
+    {
+      "name": "Huntsville",
+      "zipCodes": ["35801", "35802", "35810", "35816", "35805"]
+    },
+    {
+      "name": "Mobile",
+      "zipCodes": ["36608", "36618", "36607", "36693", "36606"]
+    },
+    {
+      "name": "Tuscaloosa",
+      "zipCodes": ["35401", "35404", "35405", "35406", "35407"]
+    },
+    {
+      "name": "Hoover",
+      "zipCodes": ["35226", "35244", "35216", "35242", "35236"]
+    },
+    {
+      "name": "Dothan",
+      "zipCodes": ["36303", "36301", "36305", "36345", "36330"]
+    },
+    {
+      "name": "Auburn",
+      "zipCodes": ["36830", "36832", "36849", "36879", "36801"]
+    },
+    {
+      "name": "Decatur",
+      "zipCodes": ["35601", "35603", "35602", "35609", "35640"]
+    },
+    {
+      "name": "Madison",
+      "zipCodes": ["35758", "35756", "35749", "35748", "35750"]
+    },
+    {
+      "name": "Florence",
+      "zipCodes": ["35630", "35633", "35631", "35634", "35632"]
+    },
+    {
+      "name": "Gadsden",
+      "zipCodes": ["35901", "35904", "35903", "35902", "35907"]
+    },
+    {
+      "name": "Vestavia Hills",
+      "zipCodes": ["35216", "35243", "35242", "35226", "35266"]
+    },
+    {
+      "name": "Prattville",
+      "zipCodes": ["36066", "36067", "36068", "36069", "36008"]
+    },
+    {
+      "name": "Alabaster",
+      "zipCodes": ["35007", "35022", "35044", "35043", "35080"]
+    }
+  ]
+}
+,
+{
+  "name": "Alaska",
+  "cities": [
+    {
+      "name": "Anchorage",
+      "zipCodes": ["99501", "99502", "99503", "99504", "99505"]
+    },
+    {
+      "name": "Fairbanks",
+      "zipCodes": ["99701", "99702", "99703", "99705", "99709"]
+    },
+    {
+      "name": "Juneau",
+      "zipCodes": ["99801", "99802", "99803", "99811", "99812"]
+    },
+    {
+      "name": "Sitka",
+      "zipCodes": ["99835", "99836"]
+    },
+    {
+      "name": "Ketchikan",
+      "zipCodes": ["99901", "99918"]
+    },
+    {
+      "name": "Wasilla",
+      "zipCodes": ["99629", "99623"]
+    },
+    {
+      "name": "Kenai",
+      "zipCodes": ["99611", "99635"]
+    },
+    {
+      "name": "Kodiak",
+      "zipCodes": ["99615", "99619"]
+    },
+    {
+      "name": "Bethel",
+      "zipCodes": ["99559"]
+    },
+    {
+      "name": "Palmer",
+      "zipCodes": ["99645", "99654"]
+    },
+    {
+      "name": "Homer",
+      "zipCodes": ["99603"]
+    },
+    {
+      "name": "Unalaska",
+      "zipCodes": ["99685"]
+    },
+    {
+      "name": "Soldotna",
+      "zipCodes": ["99669"]
+    },
+    {
+      "name": "Barrow",
+      "zipCodes": ["99723"]
+    },
+    {
+      "name": "Nome",
+      "zipCodes": ["99762"]
+    },
+    {
+      "name": "Valdez",
+      "zipCodes": ["99686"]
+    }
+  ]
+}
+,
+{
+  "name": "Arizona",
+  "cities": [
+    {
+      "name": "Phoenix",
+      "zipCodes": ["85001", "85002", "85003", "85004", "85006"]
+    },
+    {
+      "name": "Tucson",
+      "zipCodes": ["85701", "85704", "85705", "85706", "85710"]
+    },
+    {
+      "name": "Mesa",
+      "zipCodes": ["85201", "85203", "85204", "85205", "85206"]
+    },
+    {
+      "name": "Chandler",
+      "zipCodes": ["85224", "85225", "85226", "85248", "85249"]
+    },
+    {
+      "name": "Glendale",
+      "zipCodes": ["85301", "85302", "85303", "85304", "85305"]
+    },
+    {
+      "name": "Scottsdale",
+      "zipCodes": ["85250", "85251", "85254", "85255", "85258"]
+    },
+    {
+      "name": "Gilbert",
+      "zipCodes": ["85233", "85234", "85295", "85296", "85297"]
+    },
+    {
+      "name": "Tempe",
+      "zipCodes": ["85281", "85282", "85283", "85284", "85287"]
+    },
+    {
+      "name": "Peoria",
+      "zipCodes": ["85345", "85381", "85382", "85383", "85385"]
+    },
+    {
+      "name": "Surprise",
+      "zipCodes": ["85374", "85378", "85379", "85388"]
+    },
+    {
+      "name": "Yuma",
+      "zipCodes": ["85364", "85365", "85367", "85369"]
+    },
+    {
+      "name": "Avondale",
+      "zipCodes": ["85323", "85392"]
+    },
+    {
+      "name": "Flagstaff",
+      "zipCodes": ["86001", "86004"]
+    },
+    {
+      "name": "Goodyear",
+    "zipCodes": ["85338", "85395"]
+    },
+    {
+      "name": "Lake Havasu City",
+    "zipCodes": ["86403", "86404", "86406"]
+    },
+    {
+      "name": "Casa Grande",
+    "zipCodes": ["85122", "85123", "85130"]
+    }
+  ]
+}
+,
+{
+  "name": "Arkansas",
+  "cities": [
+    {
+      "name": "Little Rock",
+      "zipCodes": ["72201", "72202", "72204", "72205", "72206"]
+    },
+    {
+      "name": "Fort Smith",
+      "zipCodes": ["72901", "72903", "72904", "72908", "72916"]
+    },
+    {
+      "name": "Fayetteville",
+      "zipCodes": ["72701", "72703", "72704", "72730"]
+    },
+    {
+      "name": "Springdale",
+      "zipCodes": ["72762", "72764", "72765", "72766"]
+    },
+    {
+      "name": "Jonesboro",
+      "zipCodes": ["72401", "72404"]
+    },
+    {
+      "name": "North Little Rock",
+      "zipCodes": ["72114", "72116", "72117", "72118", "72120"]
+    },
+    {
+      "name": "Conway",
+      "zipCodes": ["72032", "72034"]
+    },
+    {
+      "name": "Rogers",
+      "zipCodes": ["72756", "72758"]
+    },
+    {
+      "name": "Bentonville",
+      "zipCodes": ["72712", "72713"]
+    },
+    {
+      "name": "Pine Bluff",
+      "zipCodes": ["71601", "71602", "71603", "71611"]
+    },
+    {
+      "name": "Hot Springs",
+      "zipCodes": ["71901", "71913"]
+    },
+    {
+      "name": "Benton",
+      "zipCodes": ["72015", "72019"]
+    },
+    {
+      "name": "Sherwood",
+      "zipCodes": ["72120", "72117"]
+    },
+    {
+      "name": "Texarkana",
+      "zipCodes": ["71854", "71855"]
+    },
+    {
+      "name": "Jacksonville",
+      "zipCodes": ["72076", "72099"]
+    },
+    {
+      "name": "Russellville",
+      "zipCodes": ["72801", "72802"]
+    },
+    {
+      "name": "Paragould",
+      "zipCodes": ["72450", "72451"]
+    },
+    {
+      "name": "Cabot",
+      "zipCodes": ["72023", "72076"]
+    },
+    {
+      "name": "Searcy",
+      "zipCodes": ["72143", "72145"]
+    },
+    {
+      "name": "Van Buren",
+      "zipCodes": ["72956", "72957"]
+    }
+  ]
+}
+,
+{
+  "name": "California",
+  "cities": [
+    {
+      "name": "Los Angeles",
+      "zipCodes": ["90001", "90012", "90024", "90034", "90044"]
+    },
+    {
+      "name": "San Francisco",
+      "zipCodes": ["94102", "94109", "94114", "94123", "94133"]
+    },
+    {
+      "name": "San Diego",
+      "zipCodes": ["92101", "92109", "92122", "92126", "92139"]
+    },
+    {
+      "name": "Sacramento",
+      "zipCodes": ["95814", "95822", "95825", "95831", "95864"]
+    },
+    {
+      "name": "San Jose",
+      "zipCodes": ["95110", "95123", "95136", "95148", "95111"]
+    },
+    {
+      "name": "Oakland",
+      "zipCodes": ["94601", "94606", "94610", "94612", "94621"]
+    },
+    {
+      "name": "Long Beach",
+      "zipCodes": ["90802", "90805", "90810", "90813", "90815"]
+    },
+    {
+      "name": "Fresno",
+      "zipCodes": ["93701", "93702", "93703", "93704", "93705"]
+    },
+    {
+      "name": "Santa Ana",
+      "zipCodes": ["92701", "92703", "92704", "92705", "92707"]
+    },
+    {
+      "name": "Anaheim",
+      "zipCodes": ["92801", "92804", "92805", "92807", "92870"]
+    },
+    {
+      "name": "Riverside",
+      "zipCodes": ["92501", "92503", "92504", "92505", "92506"]
+    },
+    {
+      "name": "Irvine",
+      "zipCodes": ["92602", "92604", "92606", "92612", "92618"]
+    },
+    {
+      "name": "Bakersfield",
+      "zipCodes": ["93301", "93304", "93305", "93306", "93307"]
+    },
+    {
+      "name": "Santa Monica",
+      "zipCodes": ["90401", "90402", "90403", "90404", "90405"]
+    },
+    {
+      "name": "Pasadena",
+      "zipCodes": ["91101", "91103", "91104", "91105", "91106"]
+    },
+    {
+      "name": "Berkeley",
+      "zipCodes": ["94702", "94703", "94704", "94705", "94709"]
+    },
+    {
+      "name": "Hollywood",
+      "zipCodes": ["90028", "90038", "90046", "90068"]
+    },
+    {
+      "name": "Orange",
+      "zipCodes": ["92865", "92866", "92867", "92868", "92869"]
+    },
+    {
+      "name": "Santa Clara",
+      "zipCodes": ["95050", "95051", "95054", "95070", "95129"]
+    },
+    {
+      "name": "Palo Alto",
+      "zipCodes": ["94301", "94303", "94304", "94306"]
+    }
+  ]
+}
+,
+{
+  "name": "Colorado",
+  "cities": [
+    {
+      "name": "Denver",
+      "zipCodes": ["80202", "80203", "80204", "80205", "80206"]
+    },
+    {
+      "name": "Colorado Springs",
+      "zipCodes": ["80903", "80904", "80905", "80906", "80907"]
+    },
+    {
+      "name": "Aurora",
+      "zipCodes": ["80010", "80011", "80012", "80013", "80014"]
+    },
+    {
+      "name": "Fort Collins",
+      "zipCodes": ["80521", "80524", "80525", "80526", "80528"]
+    },
+    {
+      "name": "Boulder",
+      "zipCodes": ["80301", "80302", "80303", "80304", "80305"]
+    },
+    {
+      "name": "Lakewood",
+      "zipCodes": ["80214", "80215", "80226", "80227", "80228"]
+    },
+    {
+      "name": "Thornton",
+      "zipCodes": ["80229", "80233", "80241", "80260", "80602"]
+    },
+    {
+      "name": "Arvada",
+      "zipCodes": ["80002", "80003", "80004", "80005", "80007"]
+    },
+    {
+      "name": "Westminster",
+      "zipCodes": ["80021", "80030", "80031", "80035", "80234"]
+    },
+    {
+      "name": "Pueblo",
+      "zipCodes": ["81001", "81003", "81004", "81005", "81006"]
+    },
+    {
+      "name": "Centennial",
+      "zipCodes": ["80015", "80016", "80111", "80112", "80122"]
+    },
+    {
+      "name": "Broomfield",
+      "zipCodes": ["80020", "80021", "80023", "80038"]
+    },
+    {
+      "name": "Greeley",
+      "zipCodes": ["80631", "80634", "80639", "80620", "80640"]
+    },
+    {
+      "name": "Longmont",
+      "zipCodes": ["80501", "80503", "80504", "80537", "80547"]
+    },
+    {
+      "name": "Loveland",
+      "zipCodes": ["80537", "80538", "80539"]
+    },
+    {
+      "name": "Grand Junction",
+      "zipCodes": ["81501", "81503", "81504", "81505", "81506"]
+    },
+    {
+      "name": "Castle Rock",
+      "zipCodes": ["80104", "80108", "80109"]
+    },
+    {
+      "name": "Commerce City",
+      "zipCodes": ["80022", "80037"]
+    },
+    {
+      "name": "Littleton",
+      "zipCodes": ["80120", "80121", "80122", "80123", "80128"]
+    },
+    {
+      "name": "Northglenn",
+      "zipCodes": ["80221", "80233", "80234", "80260"]
+    },
+    {
+      "name": "Englewood",
+      "zipCodes": ["80110", "80111", "80112", "80113"]
+    }
+  ]
+}
+,
+{
+  "name": "Connecticut",
+  "cities": [
+    {
+      "name": "Bridgeport",
+      "zipCodes": ["06601", "06604", "06605", "06606", "06607"]
+    },
+    {
+      "name": "New Haven",
+      "zipCodes": ["06501", "06502", "06503", "06504", "06505"]
+    },
+    {
+      "name": "Hartford",
+      "zipCodes": ["06101", "06102", "06103", "06104", "06105"]
+    },
+    {
+      "name": "Stamford",
+      "zipCodes": ["06901", "06902", "06903", "06904", "06905"]
+    },
+    {
+      "name": "Waterbury",
+      "zipCodes": ["06701", "06702", "06704", "06705", "06706"]
+    },
+    {
+      "name": "Norwalk",
+      "zipCodes": ["06850", "06851", "06853", "06854", "06855"]
+    },
+    {
+      "name": "Danbury",
+      "zipCodes": ["06810", "06811", "06813", "06816", "06817"]
+    },
+    {
+      "name": "New Britain",
+      "zipCodes": ["06051", "06052", "06053"]
+    },
+    {
+      "name": "West Hartford",
+      "zipCodes": ["06107", "06110", "06117", "06119", "06127"]
+    },
+    {
+      "name": "Greenwich",
+      "zipCodes": ["06830", "06831", "06870", "06878"]
+    },
+    {
+      "name": "Bristol",
+      "zipCodes": ["06010", "06011"]
+    },
+    {
+      "name": "Meriden",
+      "zipCodes": ["06450", "06451"]
+    },
+    {
+      "name": "Manchester",
+      "zipCodes": ["06040", "06041", "06042"]
+    },
+    {
+      "name": "West Haven",
+      "zipCodes": ["06516", "06519"]
+    },
+    {
+      "name": "Stratford",
+      "zipCodes": ["06614", "06615"]
+    },
+    {
+      "name": "Milford",
+      "zipCodes": ["06460", "06461"]
+    },
+    {
+      "name": "East Hartford",
+      "zipCodes": ["06108", "06118", "06128"]
+    },
+    {
+      "name": "Middletown",
+      "zipCodes": ["06457"]
+    },
+    {
+      "name": "Wallingford",
+      "zipCodes": ["06492"]
+    },
+    {
+      "name": "Enfield",
+      "zipCodes": ["06082", "06083"]
+    },
+    {
+      "name": "Southington",
+      "zipCodes": ["06489"]
+    },
+    {
+      "name": "Norwich",
+      "zipCodes": ["06360"]
+    },
+    {
+      "name": "Shelton",
+      "zipCodes": ["06484"]
+    }
+  ]
+}
+,
+{
+  "name": "Delaware",
+  "cities": [
+    {
+      "name": "Wilmington",
+      "zipCodes": ["19801", "19802", "19803", "19804", "19805"]
+    },
+    {
+      "name": "Dover",
+      "zipCodes": ["19901", "19902", "19903", "19904", "19905"]
+    },
+    {
+      "name": "Newark",
+      "zipCodes": ["19702", "19711", "19713", "19716"]
+    },
+    {
+      "name": "Middletown",
+      "zipCodes": ["19709"]
+    },
+    {
+      "name": "Smyrna",
+      "zipCodes": ["19977"]
+    },
+    {
+      "name": "Milford",
+      "zipCodes": ["19963"]
+    },
+    {
+      "name": "Seaford",
+      "zipCodes": ["19973"]
+    },
+    {
+      "name": "Georgetown",
+      "zipCodes": ["19947"]
+    },
+    {
+      "name": "Elsmere",
+      "zipCodes": ["19805"]
+    },
+    {
+      "name": "New Castle",
+      "zipCodes": ["19720"]
+    },
+    {
+      "name": "Millsboro",
+      "zipCodes": ["19966"]
+    },
+    {
+      "name": "Laurel",
+      "zipCodes": ["19956"]
+    },
+    {
+      "name": "Harrington",
+      "zipCodes": ["19952"]
+    },
+    {
+      "name": "Camden",
+      "zipCodes": ["19934"]
+    },
+    {
+      "name": "Clayton",
+      "zipCodes": ["19938"]
+    },
+    {
+      "name": "Lewes",
+      "zipCodes": ["19958"]
+    },
+    {
+      "name": "Milton",
+      "zipCodes": ["19968"]
+    },
+    {
+      "name": "Selbyville",
+      "zipCodes": ["19975"]
+    },
+    {
+      "name": "Townsend",
+      "zipCodes": ["19734"]
+    },
+    {
+      "name": "Bridgeville",
+      "zipCodes": ["19933"]
+    },
+    {
+      "name": "Ocean View",
+      "zipCodes": ["19970"]
+    },
+    {
+      "name": "Delmar",
+      "zipCodes": ["19940"]
+    },
+    {
+      "name": "Cheswold",
+      "zipCodes": ["19936"]
+    },
+    {
+      "name": "Rehoboth Beach",
+      "zipCodes": ["19971"]
+    },
+    {
+      "name": "Wyoming",
+      "zipCodes": ["19934"]
+    }
+  ]
+}
+,
+{
+  "name": "Florida",
+  "cities": [
+    {
+      "name": "Miami",
+      "zipCodes": ["33101", "33109", "33125", "33126", "33127"]
+    },
+    {
+      "name": "Tampa",
+      "zipCodes": ["33602", "33603", "33604", "33605", "33606"]
+    },
+    {
+      "name": "Orlando",
+      "zipCodes": ["32801", "32803", "32804", "32805", "32806"]
+    },
+    {
+      "name": "Jacksonville",
+      "zipCodes": ["32202", "32204", "32205", "32206", "32207"]
+    },
+    {
+      "name": "Fort Lauderdale",
+      "zipCodes": ["33301", "33304", "33305", "33306", "33308"]
+    },
+    {
+      "name": "St. Petersburg",
+      "zipCodes": ["33701", "33702", "33703", "33704", "33705"]
+    },
+    {
+      "name": "Sarasota",
+      "zipCodes": ["34231", "34232", "34233", "34234", "34235"]
+    },
+    {
+      "name": "Naples",
+      "zipCodes": ["34102", "34103", "34104", "34105", "34108"]
+    },
+    {
+      "name": "Fort Myers",
+      "zipCodes": ["33901", "33903", "33905", "33907", "33912"]
+    },
+    {
+      "name": "West Palm Beach",
+      "zipCodes": ["33401", "33403", "33404", "33405", "33406"]
+    },
+    {
+      "name": "Tallahassee",
+      "zipCodes": ["32301", "32303", "32304", "32305", "32308"]
+    },
+    {
+      "name": "Gainesville",
+      "zipCodes": ["32601", "32603", "32605", "32606", "32607"]
+    },
+    {
+      "name": "Daytona Beach",
+      "zipCodes": ["32114", "32117", "32118", "32119", "32124"]
+    },
+    {
+      "name": "Pensacola",
+    "zipCodes": ["32501", "32502", "32503", "32504", "32505"]
+    },
+    {
+      "name": "Ocala",
+      "zipCodes": ["34470", "34471", "34472", "34473", "34474"]
+    },
+    {
+      "name": "Bradenton",
+      "zipCodes": ["34205", "34207", "34208", "34209", "34210"]
+    },
+    {
+      "name": "Cape Coral",
+      "zipCodes": ["33904", "33909", "33914", "33990", "33991"]
+    },
+    {
+      "name": "Clearwater",
+      "zipCodes": ["33755", "33756", "33759", "33760", "33761"]
+    },
+    {
+      "name": "Melbourne",
+      "zipCodes": ["32901", "32903", "32904", "32905", "32907"]
+    },
+    {
+      "name": "Port St. Lucie",
+      "zipCodes": ["34952", "34953", "34983", "34984", "34986"]
+    },
+    {
+      "name": "Venice",
+      "zipCodes": ["34285", "34292", "34293"]
+    },
+    {
+      "name": "Lakeland",
+      "zipCodes": ["33801", "33803", "33805", "33809", "33810"]
+    },
+    {
+      "name": "Panama City",
+      "zipCodes": ["32401", "32403", "32404", "32405", "32408"]
+    },
+    {
+      "name": "Palm Bay",
+      "zipCodes": ["32905", "32907", "32908", "32909"]
+    },
+    {
+      "name": "Plantation",
+      "zipCodes": ["33313", "33317", "33322", "33323", "33324"]
+    },
+    {
+      "name": "Hollywood",
+      "zipCodes": ["33019", "33020", "33021", "33023", "33024"]
+    },
+    {
+      "name": "Lauderhill",
+      "zipCodes": ["33311", "33313", "33319", "33321", "33351"]
+    },
+    {
+      "name": "Sunrise",
+      "zipCodes": ["33322", "33323", "33325", "33326", "33351"]
+    }
+  ]
+}
+,
+{
+  "name": "Georgia",
+  "cities": [
+    {
+      "name": "Atlanta",
+      "zipCodes": ["30301", "30303", "30305", "30306", "30307"]
+    },
+    {
+      "name": "Savannah",
+      "zipCodes": ["31401", "31404", "31405", "31406", "31407"]
+    },
+    {
+      "name": "Augusta",
+      "zipCodes": ["30901", "30904", "30905", "30906", "30907"]
+    },
+    {
+      "name": "Columbus",
+      "zipCodes": ["31901", "31903", "31904", "31906", "31907"]
+    },
+    {
+      "name": "Macon",
+      "zipCodes": ["31201", "31204", "31206", "31210", "31211"]
+    },
+    {
+      "name": "Athens",
+      "zipCodes": ["30601", "30605", "30606", "30607", "30612"]
+    },
+    {
+      "name": "Albany",
+      "zipCodes": ["31701", "31705", "31707", "31721", "31763"]
+    },
+    {
+      "name": "Warner Robins",
+      "zipCodes": ["31005", "31008", "31088", "31093", "31098"]
+    },
+    {
+      "name": "Roswell",
+      "zipCodes": ["30075", "30076", "30077"]
+    },
+    {
+      "name": "Sandy Springs",
+      "zipCodes": ["30328", "30338", "30350"]
+    },
+    {
+      "name": "Marietta",
+      "zipCodes": ["30060", "30062", "30064", "30066", "30068"]
+    },
+    {
+      "name": "Alpharetta",
+      "zipCodes": ["30004", "30005", "30009", "30022", "30023"]
+    },
+    {
+      "name": "Dunwoody",
+      "zipCodes": ["30338", "30346", "30350"]
+    },
+    {
+      "name": "Johns Creek",
+      "zipCodes": ["30005", "30022"]
+    },
+    {
+      "name": "Valdosta",
+      "zipCodes": ["31601", "31602", "31605", "31606", "31698"]
+    },
+    {
+      "name": "Dalton",
+      "zipCodes": ["30719", "30720", "30721", "30722"]
+    },
+    {
+      "name": "Rome",
+      "zipCodes": ["30161", "30165"]
+    },
+    {
+      "name": "Peachtree City",
+      "zipCodes": ["30269", "30270"]
+    },
+    {
+      "name": "Gainesville",
+      "zipCodes": ["30501", "30504", "30506"]
+    },
+    {
+      "name": "Newnan",
+      "zipCodes": ["30263", "30265"]
+    },
+    {
+      "name": "McDonough",
+      "zipCodes": ["30252", "30253"]
+    },
+    {
+      "name": "Covington",
+      "zipCodes": ["30014", "30016"]
+    },
+    {
+      "name": "Douglasville",
+      "zipCodes": ["30134", "30135"]
+    },
+    {
+      "name": "Lawrenceville",
+      "zipCodes": ["30043", "30044", "30045"]
+    },
+    {
+      "name": "Kennesaw",
+      "zipCodes": ["30144", "30152"]
+    },
+    {
+      "name": "LaGrange",
+      "zipCodes": ["30240", "30241"]
+    },
+    {
+      "name": "Statesboro",
+      "zipCodes": ["30458", "30461"]
+    },
+    {
+      "name": "Duluth",
+      "zipCodes": ["30096", "30097", "30098"]
+    },
+    {
+      "name": "Stockbridge",
+      "zipCodes": ["30281", "30253"]
+    }
+  ]
+}
+,
+{
+  "name": "Hawaii",
+  "cities": [
+    {
+      "name": "Honolulu",
+      "zipCodes": ["96801", "96813", "96815", "96817", "96822"]
+    },
+    {
+      "name": "Hilo",
+      "zipCodes": ["96720", "96721"]
+    },
+    {
+      "name": "Kailua",
+      "zipCodes": ["96734", "96740"]
+    },
+    {
+      "name": "Kaneohe",
+      "zipCodes": ["96744", "96746"]
+    },
+    {
+      "name": "Waipahu",
+      "zipCodes": ["96797", "96798"]
+    },
+    {
+      "name": "Pearl City",
+      "zipCodes": ["96782"]
+    },
+    {
+      "name": "Waimalu",
+      "zipCodes": ["96701"]
+    },
+    {
+      "name": "Mililani",
+      "zipCodes": ["96789", "96789"]
+    },
+    {
+      "name": "Kahului",
+      "zipCodes": ["96732"]
+    },
+    {
+      "name": "Kihei",
+      "zipCodes": ["96753"]
+    },
+    {
+      "name": "Lahaina",
+      "zipCodes": ["96761"]
+    },
+    {
+      "name": "Makakilo",
+      "zipCodes": ["96707"]
+    },
+    {
+      "name": "Ewa Beach",
+      "zipCodes": ["96706"]
+    },
+    {
+      "name": "Wahiawa",
+      "zipCodes": ["96786"]
+    },
+    {
+      "name": "Schofield Barracks",
+      "zipCodes": ["96857"]
+    },
+    {
+      "name": "Lihue",
+      "zipCodes": ["96766"]
+    },
+    {
+      "name": "Kapaa",
+      "zipCodes": ["96746"]
+    },
+    {
+      "name": "Mililani Mauka",
+      "zipCodes": ["96789"]
+    },
+    {
+      "name": "Makaha",
+      "zipCodes": ["96792"]
+    },
+    {
+      "name": "Wailuku",
+      "zipCodes": ["96793"]
+    },
+    {
+      "name": "Waianae",
+      "zipCodes": ["96792"]
+    },
+    {
+      "name": "Kapolei",
+      "zipCodes": ["96707"]
+    },
+    {
+      "name": "Lanai City",
+      "zipCodes": ["96763"]
+    },
+    {
+      "name": "Waimea",
+      "zipCodes": ["96743"]
+    },
+    {
+      "name": "Kalaheo",
+      "zipCodes": ["96741"]
+    },
+    {
+      "name": "Waikoloa Village",
+      "zipCodes": ["96738"]
+    },
+    {
+      "name": "Pukalani",
+      "zipCodes": ["96768"]
+    }
+  ]
+}
+,
+{
+  "name": "Idaho",
+  "cities": [
+    {
+      "name": "Boise",
+      "zipCodes": ["83702", "83703", "83704", "83705", "83706"]
+    },
+    {
+      "name": "Meridian",
+      "zipCodes": ["83642", "83646", "83680"]
+    },
+    {
+      "name": "Nampa",
+      "zipCodes": ["83651", "83686", "83687"]
+    },
+    {
+      "name": "Idaho Falls",
+      "zipCodes": ["83401", "83402", "83404"]
+    },
+    {
+      "name": "Pocatello",
+      "zipCodes": ["83201", "83202", "83204"]
+    },
+    {
+      "name": "Caldwell",
+      "zipCodes": ["83605"]
+    },
+    {
+      "name": "Coeur d'Alene",
+      "zipCodes": ["83814", "83815"]
+    },
+    {
+      "name": "Twin Falls",
+      "zipCodes": ["83301", "83303"]
+    },
+    {
+      "name": "Lewiston",
+      "zipCodes": ["83501"]
+    },
+    {
+      "name": "Post Falls",
+      "zipCodes": ["83854"]
+    },
+    {
+      "name": "Rexburg",
+      "zipCodes": ["83440"]
+    },
+    {
+      "name": "Moscow",
+      "zipCodes": ["83843"]
+    },
+    {
+      "name": "Eagle",
+      "zipCodes": ["83616"]
+    },
+    {
+      "name": "Ammon",
+      "zipCodes": ["83406"]
+    },
+    {
+      "name": "Kuna",
+      "zipCodes": ["83634"]
+    },
+    {
+      "name": "Hayden",
+      "zipCodes": ["83835"]
+    },
+    {
+      "name": "Mountain Home",
+      "zipCodes": ["83647"]
+    },
+    {
+      "name": "Chubbuck",
+      "zipCodes": ["83202"]
+    },
+    {
+      "name": "Blackfoot",
+      "zipCodes": ["83221"]
+    },
+    {
+      "name": "Garden City",
+      "zipCodes": ["83714"]
+    },
+    {
+      "name": "Jerome",
+      "zipCodes": ["83338"]
+    },
+    {
+      "name": "Burley",
+      "zipCodes": ["83318"]
+    },
+    {
+      "name": "Star",
+      "zipCodes": ["83669"]
+    },
+    {
+      "name": "Rathdrum",
+      "zipCodes": ["83858"]
+    },
+    {
+      "name": "Middleton",
+      "zipCodes": ["83644"]
+    },
+    {
+      "name": "Hailey",
+    "zipCodes": ["83333"]
+    },
+    {
+      "name": "Emmett",
+      "zipCodes": ["83617"]
+    },
+    {
+      "name": "Preston",
+      "zipCodes": ["83263"]
+    },
+    {
+      "name": "Weiser",
+      "zipCodes": ["83672"]
+    }
+  ]
+}
+,
+{
+  "name": "Illinois",
+  "cities": [
+    {
+      "name": "Chicago",
+      "zipCodes": ["60601", "60602", "60603", "60604", "60605"]
+    },
+    {
+      "name": "Aurora",
+      "zipCodes": ["60502", "60503", "60504", "60505", "60506"]
+    },
+    {
+      "name": "Rockford",
+      "zipCodes": ["61101", "61102", "61103", "61104", "61107"]
+    },
+    {
+      "name": "Joliet",
+      "zipCodes": ["60431", "60432", "60433", "60434", "60435"]
+    },
+    {
+      "name": "Naperville",
+      "zipCodes": ["60540", "60563", "60564", "60565", "60566"]
+    },
+    {
+      "name": "Springfield",
+      "zipCodes": ["62701", "62702", "62703", "62704", "62707"]
+    },
+    {
+      "name": "Peoria",
+      "zipCodes": ["61602", "61603", "61604", "61605", "61606"]
+    },
+    {
+      "name": "Elgin",
+      "zipCodes": ["60120", "60123", "60124", "60177", "60136"]
+    },
+    {
+      "name": "Waukegan",
+      "zipCodes": ["60085", "60087"]
+    },
+    {
+      "name": "Champaign",
+      "zipCodes": ["61820", "61821", "61822", "61824", "61825"]
+    },
+    {
+      "name": "Bloomington",
+      "zipCodes": ["61701", "61704", "61705", "61709", "61710"]
+    },
+    {
+      "name": "Decatur",
+      "zipCodes": ["62521", "62522", "62523", "62524", "62526"]
+    },
+    {
+      "name": "Evanston",
+      "zipCodes": ["60201", "60202", "60203"]
+    },
+    {
+      "name": "Arlington Heights",
+      "zipCodes": ["60004", "60005"]
+    },
+    {
+      "name": "Schaumburg",
+      "zipCodes": ["60173", "60179", "60192", "60193", "60194"]
+    },
+    {
+      "name": "Bolingbrook",
+      "zipCodes": ["60440", "60490"]
+    },
+    {
+      "name": "Palatine",
+      "zipCodes": ["60067", "60074", "60078", "60094"]
+    },
+    {
+      "name": "Skokie",
+      "zipCodes": ["60076", "60077"]
+    },
+    {
+      "name": "Des Plaines",
+      "zipCodes": ["60016", "60017", "60018", "60019"]
+    },
+    {
+      "name": "Orland Park",
+      "zipCodes": ["60462", "60467"]
+    },
+    {
+      "name": "Tinley Park",
+      "zipCodes": ["60477", "60487"]
+    },
+    {
+      "name": "Oak Lawn",
+      "zipCodes": ["60453", "60454"]
+    },
+    {
+      "name": "Berwyn",
+      "zipCodes": ["60402"]
+    },
+    {
+      "name": "Mount Prospect",
+      "zipCodes": ["60056"]
+    },
+    {
+      "name": "Wheaton",
+      "zipCodes": ["60187", "60189"]
+    },
+    {
+      "name": "Hoffman Estates",
+      "zipCodes": ["60169", "60192"]
+    },
+    {
+      "name": "Normal",
+      "zipCodes": ["61761", "61790"]
+    },
+    {
+      "name": "Oak Park",
+      "zipCodes": ["60301", "60302", "60304"]
+    },
+    {
+      "name": "Downers Grove",
+      "zipCodes": ["60515", "60516"]
+    },
+    {
+      "name": "Glenview",
+      "zipCodes": ["60025", "60026"]
+    },
+    {
+      "name": "Elmhurst",
+      "zipCodes": ["60126"]
+    },
+    {
+      "name": "DeKalb",
+      "zipCodes": ["60115"]
+    },
+    {
+      "name": "Lombard",
+      "zipCodes": ["60148"]
+    },
+    {
+      "name": "Moline",
+      "zipCodes": ["61265", "61266"]
+    },
+    {
+      "name": "Buffalo Grove",
+      "zipCodes": ["60089"]
+    },
+    {
+      "name": "Belleville",
+      "zipCodes": ["62220", "62221", "62223"]
+    }
+  ]
+}
+,
+{
+  "name": "Indiana",
+  "cities": [
+    {
+      "name": "Indianapolis",
+      "zipCodes": ["46201", "46202", "46203", "46204", "46205"]
+    },
+    {
+      "name": "Fort Wayne",
+      "zipCodes": ["46802", "46803", "46804", "46805", "46806"]
+    },
+    {
+      "name": "Evansville",
+      "zipCodes": ["47708", "47710", "47711", "47712", "47713"]
+    },
+    {
+      "name": "South Bend",
+      "zipCodes": ["46601", "46613", "46614", "46615", "46616"]
+    },
+    {
+      "name": "Carmel",
+      "zipCodes": ["46032", "46033", "46074", "46077", "46082"]
+    },
+    {
+      "name": "Fishers",
+      "zipCodes": ["46037", "46038"]
+    },
+    {
+      "name": "Bloomington",
+      "zipCodes": ["47401", "47403", "47404", "47405", "47408"]
+    },
+    {
+      "name": "Hammond",
+      "zipCodes": ["46320", "46323", "46324", "46327", "46325"]
+    },
+    {
+      "name": "Gary",
+      "zipCodes": ["46402", "46403", "46404", "46406", "46407"]
+    },
+    {
+      "name": "Lafayette",
+      "zipCodes": ["47901", "47904", "47905", "47909", "47905"]
+    },
+    {
+      "name": "Muncie",
+      "zipCodes": ["47302", "47303", "47304", "47305", "47306"]
+    },
+    {
+      "name": "Terre Haute",
+      "zipCodes": ["47802", "47803", "47804", "47805", "47807"]
+    },
+    {
+      "name": "Kokomo",
+      "zipCodes": ["46901", "46902", "46903", "46904", "46914"]
+    },
+    {
+      "name": "Noblesville",
+      "zipCodes": ["46060", "46062", "46063", "46064", "46069"]
+    },
+    {
+      "name": "Anderson",
+      "zipCodes": ["46011", "46012", "46013", "46016", "46017"]
+    },
+    {
+      "name": "Greenwood",
+      "zipCodes": ["46142", "46143"]
+    },
+    {
+      "name": "Elkhart",
+      "zipCodes": ["46514", "46516", "46517", "46526", "46528"]
+    },
+    {
+      "name": "Mishawaka",
+      "zipCodes": ["46544", "46545"]
+    },
+    {
+      "name": "Lawrence",
+      "zipCodes": ["46216"]
+    },
+    {
+      "name": "Jeffersonville",
+      "zipCodes": ["47130", "47131", "47132"]
+    },
+    {
+      "name": "Columbus",
+      "zipCodes": ["47201", "47203", "47220", "47202", "47226"]
+    },
+    {
+      "name": "West Lafayette",
+      "zipCodes": ["47906", "47907", "47996"]
+    },
+    {
+      "name": "Portage",
+      "zipCodes": ["46368"]
+    },
+    {
+      "name": "New Albany",
+      "zipCodes": ["47150", "47151"]
+    },
+    {
+      "name": "Richmond",
+      "zipCodes": ["47374", "47375"]
+    },
+    {
+      "name": "Goshen",
+      "zipCodes": ["46526"]
+    },
+    {
+      "name": "Valparaiso",
+      "zipCodes": ["46383", "46385"]
+    },
+    {
+      "name": "Michigan City",
+      "zipCodes": ["46360", "46361"]
+    }
+  ]
+}
+,
+{
+  "name": "Iowa",
+  "cities": [
+    {
+      "name": "Des Moines",
+      "zipCodes": ["50309", "50310", "50311", "50312", "50313"]
+    },
+    {
+      "name": "Cedar Rapids",
+      "zipCodes": ["52401", "52402", "52403", "52404", "52405"]
+    },
+    {
+      "name": "Davenport",
+      "zipCodes": ["52801", "52802", "52803", "52804", "52806"]
+    },
+    {
+      "name": "Sioux City",
+      "zipCodes": ["51101", "51103", "51104", "51105", "51106"]
+    },
+    {
+      "name": "Iowa City",
+      "zipCodes": ["52240", "52241", "52242", "52245", "52246"]
+    },
+    {
+      "name": "Waterloo",
+      "zipCodes": ["50701", "50702", "50703", "50707", "50708"]
+    },
+    {
+      "name": "Ames",
+      "zipCodes": ["50010", "50011", "50012", "50014"]
+    },
+    {
+      "name": "West Des Moines",
+      "zipCodes": ["50265", "50266"]
+    },
+    {
+      "name": "Ankeny",
+      "zipCodes": ["50021", "50023"]
+    },
+    {
+      "name": "Council Bluffs",
+      "zipCodes": ["51501", "51503"]
+    },
+    {
+      "name": "Dubuque",
+      "zipCodes": ["52001", "52002", "52003", "52004"]
+    },
+    {
+      "name": "Urbandale",
+      "zipCodes": ["50322", "50323"]
+    },
+    {
+      "name": "Cedar Falls",
+      "zipCodes": ["50613", "50614", "50613"]
+    },
+    {
+      "name": "Marion",
+      "zipCodes": ["52302"]
+    },
+    {
+      "name": "Bettendorf",
+      "zipCodes": ["52722", "52753"]
+    },
+    {
+      "name": "Mason City",
+      "zipCodes": ["50401", "50402"]
+    },
+    {
+      "name": "Clinton",
+      "zipCodes": ["52732", "52733"]
+    },
+    {
+      "name": "Muscatine",
+      "zipCodes": ["52761"]
+    },
+    {
+      "name": "Ottumwa",
+      "zipCodes": ["52501"]
+    },
+    {
+      "name": "Fort Dodge",
+      "zipCodes": ["50501"]
+    },
+    {
+      "name": "Johnston",
+      "zipCodes": ["50131"]
+    },
+    {
+      "name": "Clive",
+      "zipCodes": ["50325"]
+    },
+    {
+      "name": "Newton",
+      "zipCodes": ["50208"]
+    },
+    {
+      "name": "Indianola",
+      "zipCodes": ["50125"]
+    },
+    {
+      "name": "Altoona",
+      "zipCodes": ["50009"]
+    },
+    {
+      "name": "Boone",
+      "zipCodes": ["50036"]
+    },
+    {
+      "name": "Oskaloosa",
+      "zipCodes": ["52577"]
+    },
+    {
+      "name": "Spencer",
+      "zipCodes": ["51301"]
+    },
+    {
+      "name": "Fort Madison",
+      "zipCodes": ["52627"]
+    },
+    {
+      "name": "Keokuk",
+    "zipCodes": ["52632"]
+    }
+  ]
+}
+,
+{
+  "name": "Kansas",
+  "cities": [
+    {
+      "name": "Wichita",
+      "zipCodes": ["67203", "67204", "67205", "67206", "67207"]
+    },
+    {
+      "name": "Overland Park",
+      "zipCodes": ["66204", "66206", "66207", "66209", "66210"]
+    },
+    {
+      "name": "Kansas City",
+      "zipCodes": ["66102", "66103", "66104", "66105", "66106"]
+    },
+    {
+      "name": "Olathe",
+      "zipCodes": ["66061", "66062", "66063"]
+    },
+    {
+      "name": "Topeka",
+      "zipCodes": ["66603", "66604", "66605", "66606", "66607"]
+    },
+    {
+      "name": "Lawrence",
+      "zipCodes": ["66044", "66045", "66046", "66047", "66049"]
+    },
+    {
+      "name": "Shawnee",
+      "zipCodes": ["66203", "66216", "66217", "66218", "66226"]
+    },
+    {
+      "name": "Manhattan",
+      "zipCodes": ["66502", "66503", "66505", "66506"]
+    },
+    {
+      "name": "Lenexa",
+      "zipCodes": ["66210", "66213", "66214", "66215", "66219"]
+    },
+    {
+      "name": "Salina",
+      "zipCodes": ["67401", "67402"]
+    },
+    {
+      "name": "Hutchinson",
+      "zipCodes": ["67501", "67502", "67504"]
+    },
+    {
+      "name": "Leavenworth",
+      "zipCodes": ["66048"]
+    },
+    {
+      "name": "Leawood",
+      "zipCodes": ["66206", "66209", "66211", "66224"]
+    },
+    {
+      "name": "Dodge City",
+      "zipCodes": ["67801", "67882"]
+    },
+    {
+      "name": "Emporia",
+      "zipCodes": ["66801"]
+    },
+    {
+      "name": "Derby",
+      "zipCodes": ["67037"]
+    },
+    {
+      "name": "Garden City",
+      "zipCodes": ["67846"]
+    },
+    {
+      "name": "Junction City",
+      "zipCodes": ["66441", "66442"]
+    },
+    {
+      "name": "Prairie Village",
+      "zipCodes": ["66206", "66207", "66208"]
+    },
+    {
+      "name": "Liberal",
+      "zipCodes": ["67901"]
+    },
+    {
+      "name": "Hays",
+      "zipCodes": ["67601"]
+    },
+    {
+      "name": "Pittsburg",
+      "zipCodes": ["66762"]
+    },
+    {
+      "name": "Newton",
+      "zipCodes": ["67114"]
+    },
+    {
+      "name": "Great Bend",
+      "zipCodes": ["67530"]
+    },
+    {
+      "name": "Andover",
+      "zipCodes": ["67002"]
+    },
+    {
+      "name": "McPherson",
+      "zipCodes": ["67460"]
+    },
+    {
+      "name": "Ottawa",
+      "zipCodes": ["66067"]
+    },
+    {
+      "name": "El Dorado",
+      "zipCodes": ["67042"]
+    },
+    {
+      "name": "Winfield",
+      "zipCodes": ["67156"]
+    },
+    {
+      "name": "Lansing",
+      "zipCodes": ["66043"]
+    },
+    {
+      "name": "Arkansas City",
+      "zipCodes": ["67005"]
+    },
+    {
+      "name": "Merriam",
+      "zipCodes": ["66203"]
+    },
+    {
+      "name": "Haysville",
+      "zipCodes": ["67060"]
+    },
+    {
+      "name": "Parsons",
+      "zipCodes": ["67357"]
+    },
+    {
+      "name": "Fort Scott",
+      "zipCodes": ["66701"]
+    },
+    {
+      "name": "Pratt",
+      "zipCodes": ["67124"]
+    },
+    {
+      "name": "Bel Aire",
+      "zipCodes": ["67220"]
+    }
+  ]
+}
+,
+{
+  "name": "Kentucky",
+  "cities": [
+    {
+      "name": "Louisville",
+      "zipCodes": ["40202", "40203", "40204", "40205", "40206"]
+    },
+    {
+      "name": "Lexington",
+      "zipCodes": ["40502", "40503", "40504", "40505", "40506"]
+    },
+    {
+      "name": "Bowling Green",
+      "zipCodes": ["42101", "42103", "42104"]
+    },
+    {
+      "name": "Owensboro",
+      "zipCodes": ["42301", "42303", "42304"]
+    },
+    {
+      "name": "Covington",
+      "zipCodes": ["41011", "41014", "41015", "41016", "41017"]
+    },
+    {
+      "name": "Richmond",
+      "zipCodes": ["40475"]
+    },
+    {
+      "name": "Georgetown",
+      "zipCodes": ["40324"]
+    },
+    {
+      "name": "Florence",
+      "zipCodes": ["41042", "41005", "41091"]
+    },
+    {
+      "name": "Hopkinsville",
+      "zipCodes": ["42240"]
+    },
+    {
+      "name": "Nicholasville",
+      "zipCodes": ["40356"]
+    },
+    {
+      "name": "Elizabethtown",
+      "zipCodes": ["42701", "42702"]
+    },
+    {
+      "name": "Henderson",
+      "zipCodes": ["42420"]
+    },
+    {
+      "name": "Frankfort",
+      "zipCodes": ["40601", "40602", "40603", "40604", "40618"]
+    },
+    {
+      "name": "Jeffersontown",
+      "zipCodes": ["40220", "40223", "40269"]
+    },
+    {
+      "name": "Independence",
+      "zipCodes": ["41051", "41015"]
+    },
+    {
+      "name": "Paducah",
+      "zipCodes": ["42001", "42002", "42003"]
+    },
+    {
+      "name": "Radcliff",
+      "zipCodes": ["40160", "40159", "40158"]
+    },
+    {
+      "name": "Ashland",
+      "zipCodes": ["41101", "41102"]
+    },
+    {
+    {
+      "name": "Madisonville",
+      "zipCodes": ["42431"]
+    },
+    {
+      "name": "Winchester",
+      "zipCodes": ["40391", "40392"]
+    },
+    {
+      "name": "Erlanger",
+      "zipCodes": ["41018"]
+    },
+    {
+      "name": "Murray",
+      "zipCodes": ["42071"]
+    },
+    {
+      "name": "St. Matthews",
+      "zipCodes": ["40207", "40205"]
+    },
+    {
+      "name": "Fort Thomas",
+      "zipCodes": ["41075"]
+    },
+    {
+      "name": "Danville",
+      "zipCodes": ["40422"]
+    },
+    {
+      "name": "Newport",
+      "zipCodes": ["41076", "41071", "41072"]
+    },
+    {
+      "name": "Shively",
+      "zipCodes": ["40216"]
+    },
+    {
+      "name": "Shelbyville",
+      "zipCodes": ["40065"]
+    },
+    {
+      "name": "Glasgow",
+      "zipCodes": ["42141"]
+    }
+  ]
+}
+,
+{
+  "name": "Louisiana",
+  "cities": [
+    {
+      "name": "New Orleans",
+      "zipCodes": ["70112", "70113", "70114", "70115", "70116"]
+    },
+    {
+      "name": "Baton Rouge",
+      "zipCodes": ["70801", "70802", "70805", "70806", "70808"]
+    },
+    {
+      "name": "Shreveport",
+      "zipCodes": ["71101", "71103", "71104", "71105", "71106"]
+    },
+    {
+      "name": "Lafayette",
+      "zipCodes": ["70501", "70503", "70506", "70508", "70592"]
+    },
+    {
+      "name": "Lake Charles",
+      "zipCodes": ["70601", "70605", "70607", "70615"]
+    },
+    {
+      "name": "Kenner",
+      "zipCodes": ["70062", "70065", "70003"]
+    },
+    {
+      "name": "Bossier City",
+      "zipCodes": ["71111", "71112", "71109"]
+    },
+    {
+      "name": "Monroe",
+      "zipCodes": ["71201", "71202", "71203", "71209"]
+    },
+    {
+      "name": "Alexandria",
+      "zipCodes": ["71301", "71302", "71303", "71306"]
+    },
+    {
+      "name": "Houma",
+      "zipCodes": ["70360", "70363", "70364"]
+    },
+    {
+      "name": "Marrero",
+      "zipCodes": ["70072"]
+    },
+    {
+      "name": "New Iberia",
+      "zipCodes": ["70560", "70563"]
+    },
+    {
+      "name": "Lafourche",
+      "zipCodes": ["70301", "70364"]
+    },
+    {
+      "name": "Central",
+      "zipCodes": ["70818"]
+    },
+    {
+      "name": "Slidell",
+      "zipCodes": ["70458", "70461"]
+    }
+  ]
+}
+,
+{
+  "name": "Maine",
+  "cities": [
+    {
+      "name": "Portland",
+      "zipCodes": ["04101", "04102", "04103", "04105", "04106"]
+    },
+    {
+      "name": "Lewiston",
+      "zipCodes": ["04240", "04241", "04243", "04250", "04252"]
+    },
+    {
+      "name": "Bangor",
+      "zipCodes": ["04401", "04402", "04412", "04472", "04474"]
+    },
+    {
+      "name": "South Portland",
+      "zipCodes": ["04106", "04116", "04122", "04123", "04112"]
+    },
+    {
+      "name": "Auburn",
+      "zipCodes": ["04210", "04211", "04212", "04223", "04224"]
+    }
+  ]
+}
+,
+{
+  "name": "Maryland",
+  "cities": [
+    {
+      "name": "Baltimore",
+      "zipCodes": ["21201", "21202", "21205", "21206", "21207"]
+    },
+    {
+      "name": "Frederick",
+      "zipCodes": ["21701", "21702", "21703", "21704", "21705"]
+    },
+    {
+      "name": "Rockville",
+      "zipCodes": ["20847", "20848", "20849", "20850", "20851"]
+    },
+    {
+      "name": "Gaithersburg",
+      "zipCodes": ["20877", "20878", "20879", "20882", "20883"]
+    },
+    {
+      "name": "Annapolis",
+      "zipCodes": ["21401", "21402", "21403", "21404", "21405"]
+    }
+  ]
+}
+,
+{
+  "name": "Massachusetts",
+  "cities": [
+    {
+      "name": "Boston",
+      "zipCodes": ["02108", "02109", "02110", "02111", "02112"]
+    },
+    {
+      "name": "Cambridge",
+      "zipCodes": ["02138", "02139", "02140", "02141", "02142"]
+    },
+    {
+      "name": "Worcester",
+      "zipCodes": ["01601", "01602", "01603", "01604", "01605"]
+    },
+    {
+      "name": "Springfield",
+      "zipCodes": ["01101", "01102", "01103", "01104", "01105"]
+    },
+    {
+      "name": "Lowell",
+      "zipCodes": ["01850", "01851", "01852", "01853", "01854"]
+    }
+  ]
+}
+,
+{
+  "name": "Michigan",
+  "cities": [
+    {
+      "name": "Detroit",
+      "zipCodes": ["48201", "48202", "48203", "48204", "48205"]
+    },
+    {
+      "name": "Grand Rapids",
+      "zipCodes": ["49503", "49504", "49505", "49506", "49507"]
+    },
+    {
+      "name": "Ann Arbor",
+      "zipCodes": ["48103", "48104", "48105", "48106", "48107"]
+    },
+    {
+      "name": "Lansing",
+      "zipCodes": ["48906", "48910", "48911", "48912", "48915"]
+    },
+    {
+      "name": "Flint",
+      "zipCodes": ["48502", "48503", "48504", "48505", "48506"]
+    }
+  ]
+}
+,
+ {
+  "name": "Minnesota",
+  "cities": [
+    {
+      "name": "Minneapolis",
+      "zipCodes": ["55401", "55402", "55403", "55404", "55405"]
+    },
+    {
+      "name": "St. Paul",
+      "zipCodes": ["55101", "55102", "55103", "55104", "55105"]
+    },
+    {
+      "name": "Rochester",
+      "zipCodes": ["55901", "55902", "55903", "55904", "55905"]
+    },
+    {
+      "name": "Duluth",
+      "zipCodes": ["55802", "55803", "55804", "55805", "55806"]
+    },
+    {
+      "name": "Bloomington",
+      "zipCodes": ["55420", "55425", "55431", "55437", "55438"]
+    }
+  ]
+}
+,
+{
+  "name": "Mississippi",
+  "cities": [
+    {
+      "name": "Jackson",
+      "zipCodes": ["39201", "39202", "39203", "39204", "39206"]
+    },
+    {
+      "name": "Gulfport",
+      "zipCodes": ["39501", "39503", "39507", "39530", "39532"]
+    },
+    {
+      "name": "Hattiesburg",
+      "zipCodes": ["39401", "39402", "39406", "39465", "39475"]
+    },
+    {
+      "name": "Southaven",
+      "zipCodes": ["38671", "38672", "38654", "38632", "38637"]
+    },
+    {
+      "name": "Biloxi",
+      "zipCodes": ["39530", "39531", "39532", "39540", "39560"]
+    }
+  ]
+}
+,
+{
+  "name": "Missouri",
+  "cities": [
+    {
+      "name": "Kansas City",
+      "zipCodes": ["64101", "64102", "64105", "64106", "64108"]
+    },
+    {
+      "name": "St. Louis",
+      "zipCodes": ["63101", "63102", "63103", "63104", "63105"]
+    },
+    {
+      "name": "Springfield",
+      "zipCodes": ["65801", "65802", "65803", "65804", "65806"]
+    },
+    {
+      "name": "Columbia",
+      "zipCodes": ["65201", "65202", "65203", "65211", "65212"]
+    },
+    {
+      "name": "Independence",
+      "zipCodes": ["64050", "64051", "64052", "64053", "64054"]
+    }
+  ]
+}
+,
+ {
+  "name": "Montana",
+  "cities": [
+    {
+      "name": "Billings",
+      "zipCodes": ["59101", "59102", "59103", "59104", "59105"]
+    },
+    {
+      "name": "Missoula",
+      "zipCodes": ["59801", "59802", "59803", "59804", "59808"]
+    },
+    {
+      "name": "Great Falls",
+      "zipCodes": ["59401", "59404", "59405", "59406", "59402"]
+    },
+    {
+      "name": "Bozeman",
+      "zipCodes": ["59715", "59718", "59717", "59719", "59771"]
+    },
+    {
+      "name": "Butte",
+      "zipCodes": ["59701", "59702", "59703", "59707", "59750"]
+    }
+  ]
+}
+,
+{
+  "name": "Nebraska",
+  "cities": [
+    {
+      "name": "Omaha",
+      "zipCodes": ["68102", "68104", "68105", "68106", "68107"]
+    },
+    {
+      "name": "Lincoln",
+      "zipCodes": ["68502", "68503", "68504", "68505", "68506"]
+    },
+    {
+      "name": "Bellevue",
+      "zipCodes": ["68123", "68147", "68157", "68133", "68157"]
+    },
+    {
+      "name": "Grand Island",
+      "zipCodes": ["68801", "68803", "68802"]
+    },
+    {
+      "name": "Kearney",
+      "zipCodes": ["68845", "68847", "68849"]
+    }
+  ]
+}
+,
+{
+  "name": "Nevada",
+  "cities": [
+    {
+      "name": "Las Vegas",
+      "zipCodes": ["89101", "89102", "89103", "89104", "89106"]
+    },
+    {
+      "name": "Henderson",
+      "zipCodes": ["89002", "89011", "89012", "89014", "89015"]
+    },
+    {
+      "name": "Reno",
+      "zipCodes": ["89501", "89502", "89503", "89506", "89509"]
+    },
+    {
+      "name": "North Las Vegas",
+      "zipCodes": ["89030", "89031", "89032", "89081", "89084"]
+    },
+    {
+      "name": "Sparks",
+      "zipCodes": ["89431", "89434", "89436", "89441", "89442"]
+    }
+  ]
+}
+,
+{
+  "name": "New Hampshire",
+  "cities": [
+    {
+      "name": "Manchester",
+      "zipCodes": ["03101", "03102", "03103", "03104", "03109"]
+    },
+    {
+      "name": "Nashua",
+      "zipCodes": ["03060", "03061", "03062", "03063", "03064"]
+    },
+    {
+      "name": "Concord",
+      "zipCodes": ["03301", "03303", "03307"]
+    },
+    {
+      "name": "Derry",
+      "zipCodes": ["03038"]
+    },
+    {
+      "name": "Dover",
+      "zipCodes": ["03820", "03821"]
+    },
+    {
+      "name": "Rochester",
+      "zipCodes": ["03867"]
+    },
+    {
+      "name": "Salem",
+      "zipCodes": ["03079"]
+    },
+    {
+      "name": "Merrimack",
+      "zipCodes": ["03054"]
+    },
+    {
+      "name": "Keene",
+      "zipCodes": ["03431"]
+    },
+    {
+      "name": "Hudson",
+      "zipCodes": ["03051"]
+    }
+  ]
+}
+,
+{
+  "name": "New Jersey",
+  "cities": [
+    {
+      "name": "Newark",
+      "zipCodes": ["07102", "07103", "07104", "07105", "07107"]
+    },
+    {
+      "name": "Jersey City",
+      "zipCodes": ["07302", "07304", "07305", "07306", "07307"]
+    },
+    {
+      "name": "Paterson",
+      "zipCodes": ["07501", "07502", "07503", "07504", "07505"]
+    },
+    {
+      "name": "Elizabeth",
+      "zipCodes": ["07201", "07202", "07206", "07208"]
+    },
+    {
+      "name": "Edison",
+      "zipCodes": ["08817", "08818", "08820", "08837"]
+    },
+    {
+      "name": "Woodbridge",
+      "zipCodes": ["07095"]
+    },
+    {
+      "name": "Lakewood",
+    "zipCodes": ["08701"]
+    },
+    {
+      "name": "Toms River",
+      "zipCodes": ["08753", "08755", "08757"]
+    },
+    {
+      "name": "Hamilton",
+      "zipCodes": ["08609", "08610", "08611", "08619", "08620"]
+    },
+    {
+      "name": "Trenton",
+      "zipCodes": ["08608", "08609", "08610", "08611", "08618"]
+    }
+  ]
+}
+,
+{
+  "name": "New Mexico",
+  "cities": [
+    {
+      "name": "Albuquerque",
+      "zipCodes": ["87102", "87104", "87105", "87106", "87107"]
+    },
+    {
+      "name": "Santa Fe",
+      "zipCodes": ["87501", "87505", "87507", "87508", "87535"]
+    },
+    {
+      "name": "Las Cruces",
+      "zipCodes": ["88001", "88003", "88005", "88007", "88011"]
+    },
+    {
+      "name": "Rio Rancho",
+      "zipCodes": ["87124", "87144", "87174"]
+    },
+    {
+      "name": "Roswell",
+      "zipCodes": ["88201", "88203", "88202"]
+    },
+    {
+      "name": "Farmington",
+      "zipCodes": ["87401", "87402", "87499"]
+    },
+    {
+      "name": "Alamogordo",
+      "zipCodes": ["88310", "88311"]
+    },
+    {
+      "name": "Clovis",
+      "zipCodes": ["88101", "88102", "88103"]
+    },
+    {
+      "name": "Hobbs",
+      "zipCodes": ["88240", "88241", "88242"]
+    },
+    {
+      "name": "Carlsbad",
+      "zipCodes": ["88220", "88221"]
+    }
+  ]
+}
+,
+{
+  "name": "New York",
+  "cities": [
+    {
+      "name": "New York City",
+      "zipCodes": ["10001", "10002", "10003", "10004", "10005"]
+    },
+    {
+      "name": "Buffalo",
+      "zipCodes": ["14201", "14202", "14203", "14204", "14206"]
+    },
+    {
+      "name": "Rochester",
+      "zipCodes": ["14604", "14605", "14606", "14607", "14608"]
+    },
+    {
+      "name": "Syracuse",
+      "zipCodes": ["13202", "13203", "13204", "13205", "13206"]
+    },
+    {
+      "name": "Albany",
+      "zipCodes": ["12202", "12203", "12204", "12205", "12206"]
+    },
+    {
+      "name": "Yonkers",
+      "zipCodes": ["10701", "10703", "10704", "10705", "10710"]
+    },
+    {
+      "name": "White Plains",
+      "zipCodes": ["10601", "10602", "10603", "10604", "10606"]
+    },
+    {
+      "name": "Schenectady",
+      "zipCodes": ["12302", "12303", "12304", "12305", "12306"]
+    },
+    {
+      "name": "Utica",
+      "zipCodes": ["13501", "13502", "13503", "13504", "13505"]
+    },
+    {
+      "name": "Binghamton",
+      "zipCodes": ["13901", "13902", "13903", "13904", "13905"]
+    }
+  ]
+}
+,
+{
+  "name": "North Carolina",
+  "cities": [
+    {
+      "name": "Charlotte",
+      "zipCodes": ["28201", "28202", "28203", "28204", "28205"]
+    },
+    {
+      "name": "Raleigh",
+      "zipCodes": ["27601", "27602", "27603", "27604", "27605"]
+    },
+    {
+      "name": "Greensboro",
+      "zipCodes": ["27401", "27402", "27403", "27404", "27405"]
+    },
+    {
+      "name": "Durham",
+      "zipCodes": ["27701", "27702", "27703", "27704", "27705"]
+    },
+    {
+      "name": "Winston-Salem",
+      "zipCodes": ["27101", "27102", "27103", "27104", "27105"]
+    },
+    {
+      "name": "Fayetteville",
+      "zipCodes": ["28301", "28302", "28303", "28304", "28305"]
+    },
+    {
+      "name": "Cary",
+      "zipCodes": ["27511", "27512", "27513", "27518", "27519"]
+    },
+    {
+      "name": "Wilmington",
+      "zipCodes": ["28401", "28402", "28403", "28404", "28405"]
+    },
+    {
+      "name": "High Point",
+      "zipCodes": ["27260", "27261", "27262", "27263", "27264"]
+    },
+    {
+      "name": "Asheville",
+      "zipCodes": ["28801", "28802", "28803", "28804", "28805"]
+    }
+  ]
+}
+,
+{
+  "name": "North Dakota",
+  "cities": [
+    {
+      "name": "Fargo",
+      "zipCodes": ["58102", "58103", "58104", "58105", "58106"]
+    },
+    {
+      "name": "Bismarck",
+      "zipCodes": ["58501", "58502", "58503", "58504", "58505"]
+    },
+    {
+      "name": "Grand Forks",
+      "zipCodes": ["58201", "58202", "58203", "58204", "58205"]
+    },
+    {
+      "name": "Minot",
+      "zipCodes": ["58701", "58702", "58703", "58704", "58705"]
+    },
+    {
+      "name": "West Fargo",
+      "zipCodes": ["58078", "58054", "58078", "58078", "58078"]
+    },
+    {
+      "name": "Mandan",
+      "zipCodes": ["58554", "58555", "58558", "58559", "58563"]
+    },
+    {
+      "name": "Dickinson",
+      "zipCodes": ["58601", "58602", "58603", "58604", "58605"]
+    },
+    {
+      "name": "Jamestown",
+      "zipCodes": ["58401", "58402", "58405", "58406", "58407"]
+    },
+    {
+      "name": "Williston",
+      "zipCodes": ["58801", "58802", "58803", "58804", "58805"]
+    },
+    {
+      "name": "Wahpeton",
+      "zipCodes": ["58074", "58075", "58076", "58077", "58078"]
+    }
+  ]
+}
+,
+{
+  "name": "Ohio",
+  "cities": [
+    {
+      "name": "Columbus",
+      "zipCodes": ["43201", "43202", "43203", "43204", "43205"]
+    },
+    {
+      "name": "Cleveland",
+      "zipCodes": ["44101", "44102", "44103", "44104", "44105"]
+    },
+    {
+      "name": "Cincinnati",
+      "zipCodes": ["45201", "45202", "45203", "45204", "45205"]
+    },
+    {
+      "name": "Toledo",
+      "zipCodes": ["43601", "43602", "43603", "43604", "43605"]
+    },
+    {
+      "name": "Akron",
+      "zipCodes": ["44301", "44302", "44303", "44304", "44305"]
+    },
+    {
+      "name": "Dayton",
+      "zipCodes": ["45401", "45402", "45403", "45404", "45405"]
+    },
+    {
+      "name": "Parma",
+      "zipCodes": ["44129", "44130", "44131", "44134", "44135"]
+    },
+    {
+      "name": "Canton",
+      "zipCodes": ["44701", "44702", "44703", "44704", "44705"]
+    },
+    {
+      "name": "Youngstown",
+      "zipCodes": ["44501", "44502", "44503", "44504", "44505"]
+    },
+    {
+      "name": "Lorain",
+      "zipCodes": ["44052", "44053", "44055", "44074", "44090"]
+    }
+  ]
+}
+,
+{
+  "name": "Oklahoma",
+  "cities": [
+    {
+      "name": "Oklahoma City",
+      "zipCodes": ["73102", "73103", "73104", "73105", "73106"]
+    },
+    {
+      "name": "Tulsa",
+      "zipCodes": ["74103", "74104", "74105", "74106", "74107"]
+    },
+    {
+      "name": "Norman",
+      "zipCodes": ["73019", "73026", "73069", "73071", "73072"]
+    },
+    {
+      "name": "Broken Arrow",
+      "zipCodes": ["74011", "74012", "74014", "74133", "74134"]
+    },
+    {
+      "name": "Lawton",
+      "zipCodes": ["73501", "73505", "73507", "73533", "73538"]
+    },
+    {
+      "name": "Edmond",
+      "zipCodes": ["73003", "73012", "73013", "73025", "73034"]
+    },
+    {
+      "name": "Moore",
+      "zipCodes": ["73160", "73165", "73170", "73173", "73179"]
+    },
+    {
+      "name": "Midwest City",
+      "zipCodes": ["73110", "73130", "73140", "73145", "73150"]
+    },
+    {
+      "name": "Enid",
+      "zipCodes": ["73701", "73703", "73705", "73720", "73703"]
+    },
+    {
+      "name": "Stillwater",
+      "zipCodes": ["74074", "74075", "74076", "74077", "74078"]
+    }
+  ]
+}
+,
+{
+  "name": "Oregon",
+  "cities": [
+    {
+      "name": "Portland",
+      "zipCodes": ["97201", "97202", "97203", "97204", "97205"]
+    },
+    {
+      "name": "Salem",
+      "zipCodes": ["97301", "97302", "97303", "97304", "97305"]
+    },
+    {
+      "name": "Eugene",
+      "zipCodes": ["97401", "97402", "97403", "97404", "97405"]
+    },
+    {
+      "name": "Gresham",
+      "zipCodes": ["97030", "97080", "97233", "97230", "97024"]
+    },
+    {
+      "name": "Hillsboro",
+      "zipCodes": ["97123", "97124", "97006", "97007", "97129"]
+    },
+    {
+      "name": "Beaverton",
+      "zipCodes": ["97005", "97006", "97007", "97008", "97075"]
+    },
+    {
+      "name": "Bend",
+      "zipCodes": ["97701", "97702", "97703", "97707", "97709"]
+    },
+    {
+      "name": "Medford",
+      "zipCodes": ["97501", "97504", "97520", "97524", "97530"]
+    },
+    {
+      "name": "Springfield",
+      "zipCodes": ["97477", "97478", "97482", "97487", "97402"]
+    },
+    {
+      "name": "Corvallis",
+      "zipCodes": ["97330", "97331", "97333", "97339", "97361"]
+    }
+  ]
+}
+,
+{
+  "name": "Pennsylvania",
+  "cities": [
+    {
+      "name": "Philadelphia",
+      "zipCodes": ["19102", "19103", "19104", "19106", "19107"]
+    },
+    {
+      "name": "Pittsburgh",
+      "zipCodes": ["15201", "15202", "15203", "15204", "15205"]
+    },
+    {
+      "name": "Allentown",
+      "zipCodes": ["18101", "18102", "18103", "18104", "18105"]
+    },
+    {
+      "name": "Erie",
+      "zipCodes": ["16501", "16502", "16503", "16504", "16505"]
+    },
+    {
+      "name": "Reading",
+      "zipCodes": ["19601", "19602", "19604", "19605", "19606"]
+    },
+    {
+      "name": "Scranton",
+      "zipCodes": ["18503", "18504", "18505", "18508", "18509"]
+    },
+    {
+      "name": "Bethlehem",
+      "zipCodes": ["18015", "18017", "18018", "18020", "18045"]
+    },
+    {
+      "name": "Lancaster",
+      "zipCodes": ["17601", "17602", "17603", "17611", "17622"]
+    },
+    {
+      "name": "Harrisburg",
+      "zipCodes": ["17101", "17102", "17103", "17104", "17105"]
+    },
+    {
+      "name": "York",
+      "zipCodes": ["17401", "17402", "17403", "17404", "17406"]
+    }
+  ]
+}
+,
+{
+  "name": "Rhode Island",
+  "cities": [
+    {
+      "name": "Providence",
+      "zipCodes": ["02903", "02904", "02905", "02906", "02907"]
+    },
+    {
+      "name": "Warwick",
+      "zipCodes": ["02886", "02888", "02889", "02893", "02919"]
+    },
+    {
+      "name": "Cranston",
+      "zipCodes": ["02905", "02907", "02910", "02920", "02921"]
+    },
+    {
+      "name": "Pawtucket",
+      "zipCodes": ["02860", "02861", "02862", "02863", "02864"]
+    },
+    {
+      "name": "East Providence",
+      "zipCodes": ["02914", "02915", "02916"]
+    },
+    {
+      "name": "Woonsocket",
+      "zipCodes": ["02895"]
+    },
+    {
+      "name": "Coventry",
+      "zipCodes": ["02816", "02827"]
+    },
+    {
+      "name": "North Providence",
+      "zipCodes": ["02904", "02908"]
+    },
+    {
+      "name": "Cumberland",
+      "zipCodes": ["02864", "02865", "02895"]
+    },
+    {
+      "name": "West Warwick",
+      "zipCodes": ["02893"]
+    }
+  ]
+}
+,
+{
+  "name": "South Carolina",
+  "cities": [
+    {
+      "name": "Columbia",
+      "zipCodes": ["29201", "29203", "29204", "29205", "29206"]
+    },
+    {
+      "name": "Charleston",
+      "zipCodes": ["29401", "29403", "29405", "29407", "29412"]
+    },
+    {
+      "name": "North Charleston",
+      "zipCodes": ["29405", "29406", "29418", "29420"]
+    },
+    {
+      "name": "Mount Pleasant",
+      "zipCodes": ["29464", "29466", "29429"]
+    },
+    {
+      "name": "Rock Hill",
+      "zipCodes": ["29730", "29732"]
+    },
+    {
+      "name": "Greenville",
+      "zipCodes": ["29601", "29605", "29607", "29609", "29611"]
+    },
+    {
+      "name": "Summerville",
+      "zipCodes": ["29483", "29485"]
+    },
+    {
+      "name": "Spartanburg",
+      "zipCodes": ["29301", "29302", "29303", "29307", "29316"]
+    },
+    {
+      "name": "Hilton Head Island",
+      "zipCodes": ["29926", "29928"]
+    },
+    {
+      "name": "Florence",
+      "zipCodes": ["29501", "29505", "29506"]
+    }
+  ]
+}
+,
+{
+  "name": "South Dakota",
+  "cities": [
+    {
+      "name": "Sioux Falls",
+      "zipCodes": ["57103", "57104", "57105", "57106", "57107"]
+    },
+    {
+      "name": "Rapid City",
+      "zipCodes": ["57701", "57702", "57703", "57709", "57706"]
+    },
+    {
+      "name": "Aberdeen",
+      "zipCodes": ["57401"]
+    },
+    {
+      "name": "Brookings",
+      "zipCodes": ["57006"]
+    },
+    {
+      "name": "Watertown",
+      "zipCodes": ["57201"]
+    },
+    {
+      "name": "Mitchell",
+      "zipCodes": ["57301"]
+    },
+    {
+      "name": "Yankton",
+      "zipCodes": ["57078"]
+    },
+    {
+      "name": "Pierre",
+      "zipCodes": ["57501"]
+    },
+    {
+      "name": "Huron",
+      "zipCodes": ["57350"]
+    },
+    {
+      "name": "Vermillion",
+      "zipCodes": ["57069"]
+    }
+  ]
+}
+,
+{
+  "name": "Tennessee",
+  "cities": [
+    {
+      "name": "Nashville",
+      "zipCodes": ["37201", "37203", "37204", "37205", "37206"]
+    },
+    {
+      "name": "Memphis",
+      "zipCodes": ["38103", "38104", "38105", "38106", "38107"]
+    },
+    {
+      "name": "Knoxville",
+      "zipCodes": ["37902", "37909", "37912", "37916", "37917"]
+    },
+    {
+      "name": "Chattanooga",
+      "zipCodes": ["37402", "37403", "37404", "37405", "37406"]
+    },
+    {
+      "name": "Clarksville",
+      "zipCodes": ["37040", "37042"]
+    },
+    {
+      "name": "Murfreesboro",
+      "zipCodes": ["37129", "37130"]
+    },
+    {
+      "name": "Franklin",
+      "zipCodes": ["37064", "37067"]
+    },
+    {
+      "name": "Jackson",
+      "zipCodes": ["38301", "38305"]
+    },
+    {
+      "name": "Johnson City",
+      "zipCodes": ["37601", "37604"]
+    },
+    {
+      "name": "Hendersonville",
+      "zipCodes": ["37075"]
+    }
+  ]
+}
+,
+{
+  "name": "Texas",
+  "cities": [
+    {
+      "name": "Houston",
+      "zipCodes": ["77002", "77004", "77005", "77006", "77007"]
+    },
+    {
+      "name": "Dallas",
+      "zipCodes": ["75201", "75204", "75205", "75206", "75207"]
+    },
+    {
+      "name": "Austin",
+      "zipCodes": ["78701", "78702", "78703", "78704", "78705"]
+    },
+    {
+      "name": "San Antonio",
+      "zipCodes": ["78201", "78202", "78203", "78204", "78205"]
+    },
+    {
+      "name": "Fort Worth",
+      "zipCodes": ["76102", "76104", "76105", "76106", "76107"]
+    },
+    {
+      "name": "Plano",
+      "zipCodes": ["75023", "75024", "75025", "75026", "75074"]
+    },
+    {
+      "name": "Irving",
+      "zipCodes": ["75038", "75039", "75060", "75061", "75062"]
+    },
+    {
+      "name": "Arlington",
+      "zipCodes": ["76001", "76002", "76006", "76010", "76011"]
+    },
+    {
+      "name": "El Paso",
+      "zipCodes": ["79901", "79902", "79903", "79904", "79905"]
+    },
+    {
+      "name": "Corpus Christi",
+      "zipCodes": ["78401", "78402", "78404", "78405", "78406"]
+    }
+  ]
+}
+,
+{
+  "name": "Utah",
+  "cities": [
+    {
+      "name": "Salt Lake City",
+      "zipCodes": ["84101", "84102", "84103", "84104", "84105"]
+    },
+    {
+      "name": "West Valley City",
+      "zipCodes": ["84118", "84119", "84120", "84128", "84170"]
+    },
+    {
+      "name": "Provo",
+      "zipCodes": ["84601", "84604", "84606", "84664", "84663"]
+    },
+    {
+      "name": "West Jordan",
+      "zipCodes": ["84081", "84084", "84088", "84095", "84096"]
+    },
+    {
+      "name": "Orem",
+      "zipCodes": ["84057", "84058", "84097", "84604", "84606"]
+    },
+    {
+      "name": "Sandy",
+      "zipCodes": ["84070", "84090", "84092", "84093", "84094"]
+    },
+    {
+      "name": "St. George",
+      "zipCodes": ["84770", "84790", "84780", "84737", "84765"]
+    },
+    {
+      "name": "Layton",
+      "zipCodes": ["84040", "84041"]
+    },
+    {
+      "name": "South Jordan",
+      "zipCodes": ["84009", "84095"]
+    },
+    {
+      "name": "Lehi",
+      "zipCodes": ["84043", "84045"]
+    }
+  ]
+}
+,
+{
+  "name": "Vermont",
+  "cities": [
+    {
+      "name": "Burlington",
+      "zipCodes": ["05401", "05402", "05405", "05406", "05408"]
+    },
+    {
+      "name": "South Burlington",
+      "zipCodes": ["05403", "05407"]
+    },
+    {
+      "name": "Rutland",
+      "zipCodes": ["05701", "05702"]
+    },
+    {
+      "name": "Essex Junction",
+      "zipCodes": ["05452"]
+    },
+    {
+      "name": "Barre",
+      "zipCodes": ["05641"]
+    },
+    {
+      "name": "Montpelier",
+      "zipCodes": ["05601"]
+    },
+    {
+      "name": "St. Albans",
+      "zipCodes": ["05478"]
+    },
+    {
+      "name": "Winooski",
+      "zipCodes": ["05404"]
+    },
+    {
+      "name": "Newport",
+      "zipCodes": ["05855"]
+    },
+    {
+      "name": "Bellows Falls",
+      "zipCodes": ["05101"]
+    }
+  ]
+}
+,
+{
+  "name": "Virginia",
+  "cities": [
+    {
+      "name": "Virginia Beach",
+      "zipCodes": ["23454", "23455", "23456", "23464", "23452"]
+    },
+    {
+      "name": "Norfolk",
+      "zipCodes": ["23502", "23503", "23504", "23505", "23507"]
+    },
+    {
+      "name": "Chesapeake",
+      "zipCodes": ["23320", "23321", "23322", "23323", "23324"]
+    },
+    {
+      "name": "Richmond",
+      "zipCodes": ["23223", "23225", "23224", "23222", "23220"]
+    },
+    {
+      "name": "Arlington",
+      "zipCodes": ["22204", "22206", "22207", "22202", "22201"]
+    },
+    {
+      "name": "Newport News",
+      "zipCodes": ["23608", "23602", "23606", "23601", "23607"]
+    },
+    {
+      "name": "Alexandria",
+      "zipCodes": ["22304", "22302", "22312", "22311", "22305"]
+    },
+    {
+      "name": "Hampton",
+      "zipCodes": ["23666", "23669", "23663", "23661", "23664"]
+    },
+    {
+      "name": "Roanoke",
+      "zipCodes": ["24012", "24013", "24014", "24015", "24016"]
+    },
+    {
+      "name": "Portsmouth",
+      "zipCodes": ["23701", "23702", "23703", "23704", "23707"]
+    }
+  ]
+}
+,
+ {
+  "name": "Washington",
+  "cities": [
+    {
+      "name": "Seattle",
+      "zipCodes": ["98101", "98102", "98103", "98104", "98105"]
+    },
+    {
+      "name": "Spokane",
+      "zipCodes": ["99201", "99202", "99203", "99204", "99205"]
+    },
+    {
+      "name": "Tacoma",
+      "zipCodes": ["98402", "98403", "98404", "98405", "98406"]
+    },
+    {
+      "name": "Vancouver",
+      "zipCodes": ["98660", "98661", "98662", "98663", "98664"]
+    },
+    {
+      "name": "Bellevue",
+      "zipCodes": ["98004", "98005", "98006", "98007", "98008"]
+    },
+    {
+      "name": "Everett",
+      "zipCodes": ["98201", "98203", "98204", "98205", "98208"]
+    },
+    {
+      "name": "Kent",
+      "zipCodes": ["98030", "98031", "98032", "98042", "98089"]
+    },
+    {
+      "name": "Renton",
+      "zipCodes": ["98055", "98056", "98057", "98058", "98059"]
+    },
+    {
+      "name": "Yakima",
+      "zipCodes": ["98901", "98902", "98903", "98908", "98942"]
+    },
+    {
+      "name": "Bellingham",
+      "zipCodes": ["98225", "98226", "98229", "98248", "98227"]
+    }
+  ]
+}
+,
+  {
+  "name": "West Virginia",
+  "cities": [
+    {
+      "name": "Charleston",
+      "zipCodes": ["25301", "25302", "25303", "25304", "25305"]
+    },
+    {
+      "name": "Huntington",
+      "zipCodes": ["25701", "25702", "25703", "25704", "25705"]
+    },
+    {
+      "name": "Parkersburg",
+      "zipCodes": ["26101", "26104", "26105", "26106"]
+    },
+    {
+      "name": "Wheeling",
+      "zipCodes": ["26003", "26003"]
+    },
+    {
+      "name": "Morgantown",
+      "zipCodes": ["26501", "26505", "26508"]
+    },
+    {
+      "name": "Weirton",
+      "zipCodes": ["26062", "26062"]
+    },
+    {
+      "name": "Fairmont",
+      "zipCodes": ["26554", "26555"]
+    },
+    {
+      "name": "Beckley",
+      "zipCodes": ["25801", "25802", "25813"]
+    },
+    {
+      "name": "Clarksburg",
+      "zipCodes": ["26301", "26302"]
+    },
+    {
+      "name": "Martinsburg",
+      "zipCodes": ["25401", "25402", "25403", "25404"]
+    },
+    {
+      "name": "South Charleston",
+      "zipCodes": ["25309", "25303"]
+    },
+    {
+      "name": "Bridgeport",
+      "zipCodes": ["26330", "26330"]
+    },
+    {
+      "name": "St. Albans",
+      "zipCodes": ["25177", "25177"]
+    },
+    {
+      "name": "Vienna",
+      "zipCodes": ["26105", "26105"]
+    },
+    {
+      "name": "Bluefield",
+      "zipCodes": ["24701", "24701"]
+    }
+  ]
+}
+,
+{
+  "name": "Wisconsin",
+  "cities": [
+    {
+      "name": "Milwaukee",
+      "zipCodes": ["53201", "53202", "53203", "53204", "53205"]
+    },
+    {
+      "name": "Madison",
+      "zipCodes": ["53703", "53704", "53705", "53706", "53711"]
+    },
+    {
+      "name": "Green Bay",
+      "zipCodes": ["54301", "54302", "54303", "54304", "54311"]
+    },
+    {
+      "name": "Kenosha",
+      "zipCodes": ["53140", "53141", "53142", "53143", "53144"]
+    },
+    {
+      "name": "Racine",
+      "zipCodes": ["53402", "53403", "53404", "53405", "53406"]
+    },
+    {
+      "name": "Appleton",
+      "zipCodes": ["54911", "54912", "54913", "54914", "54915"]
+    },
+    {
+      "name": "Waukesha",
+      "zipCodes": ["53186", "53187", "53188", "53189"]
+    },
+    {
+      "name": "Eau Claire",
+      "zipCodes": ["54701", "54702", "54703"]
+    },
+    {
+      "name": "Oshkosh",
+      "zipCodes": ["54901", "54902", "54904"]
+    },
+    {
+      "name": "Janesville",
+      "zipCodes": ["53545", "53546", "53548"]
+    }
+  ]
+}
+,
+{
+  "name": "Wyoming",
+  "cities": [
+    {
+      "name": "Cheyenne",
+      "zipCodes": ["82001", "82002", "82003", "82005", "82006"]
+    },
+    {
+      "name": "Casper",
+      "zipCodes": ["82601", "82602", "82604", "82609", "82615"]
+    },
+    {
+      "name": "Laramie",
+      "zipCodes": ["82070", "82071"]
+    },
+    {
+      "name": "Gillette",
+      "zipCodes": ["82716", "82717", "82718", "82732"]
+    },
+    {
+      "name": "Rock Springs",
+      "zipCodes": ["82901", "82902"]
+    },
+    {
+      "name": "Sheridan",
+      "zipCodes": ["82801", "82831", "82832", "82833"]
+    },
+    {
+      "name": "Green River",
+      "zipCodes": ["82935"]
+    },
+    {
+      "name": "Evanston",
+      "zipCodes": ["82930"]
+    },
+    {
+      "name": "Riverton",
+      "zipCodes": ["82501", "82510"]
+    },
+    {
+      "name": "Jackson",
+      "zipCodes": ["83001", "83002", "83011"]
+    }
+  ]
+}
 
+  ]
+}
