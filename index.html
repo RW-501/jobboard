@@ -25,46 +25,49 @@
             line-height: 1.6;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
 
-	    .logo{
-		    list-style: none;
-	    }
-	 .logo a    {
+.logo {
+    list-style: none;
+}
+
+.logo a {
     text-decoration: none;
     color: white;
 }
-        .logo h1 {
-            font-size: 2rem;
-        }
 
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
+.logo h1 {
+    font-size: 2rem;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex; /* Add this line to make the list items flex items */
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+nav ul li {
+    margin: 0 1rem;
+}
 
-        nav ul li a:hover {
-            color: #ddd;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
 
         /* Add your additional styles here */
 
@@ -203,21 +206,22 @@ hr {
 <body>
     <!-- Your HTML content goes here -->
 
-    <header>
-        <div class="logo">
-            <li><a href="/RemoteJobs/"><h1>Remote Jobs</h1></a></li>
-        </div>
-        <nav>
-            <ul>
-                <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
-                <li id="loginBTN"  onclick="openPopup('loginPopup')">Login</li>
-                <li><a href="/RemoteJobs/dashboard">Dashboard</a></li>
-                <li><a href="/RemoteJobs/about">About</a></li>
-                <li><a href="/RemoteJobs/contact">Contact</a></li>
-                <li id="logoutBTN"  onclick="logoutUser()">Logout</li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        <a href="/RemoteJobs/"><h1>Remote Jobs</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
+            <li id="loginBTN" onclick="openPopup('loginPopup')">Login</li>
+            <li><a href="/RemoteJobs/dashboard">Dashboard</a></li>
+            <li><a href="/RemoteJobs/about">About</a></li>
+            <li><a href="/RemoteJobs/contact">Contact</a></li>
+            <li id="logoutBTN" onclick="logoutUser()">Logout</li>
+        </ul>
+    </nav>
+</header>
+
 
 
 	
