@@ -507,11 +507,12 @@ function closePopup(popupId) {
 
 
 function setLoggedInFlag() {
-    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('userLoggedIn', 'true');
+	
 }
 
 function removeLoggedInFlag() {
-    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userLoggedIn');
 }
 
 function registerAnonymously() {
