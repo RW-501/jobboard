@@ -176,16 +176,22 @@
         </div>
         <nav>
             <ul>
+                <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
+                <li id="loginBTN"  onclick="openPopup('loginPopup')">Login</li>
                 <li><a href="/RemoteJobs/dashboard">Dashboard</a></li>
                 <li><a href="/RemoteJobs/about">About</a></li>
                 <li><a href="/RemoteJobs/contact">Contact</a></li>
+                <li id="logoutBTN"  onclick="logoutUser()">Logout</li>
             </ul>
         </nav>
     </header>
-<!-- Modify your login and register buttons to trigger pop-ups -->
-<button onclick="openPopup('loginPopup')">Login</button>
-<button onclick="openPopup('registerPopup')">Register</button>
 
+
+on the index page i want to call checkUserLogin(); then         if (userLoggedIn === 'true' && auth ) {
+hide Dashbor
+
+
+	
     <div id="photo-area"></div>
 
     <div id="views">
@@ -417,6 +423,34 @@ function loginWithGoogle() {
 }
 
 
+
+// Call checkUserLogin on page load
+document.addEventListener('DOMContentLoaded', async () => {
+  await checkUserLogin();
+  updateButtonVisibility();
+});
+
+// Update button visibility based on user login status
+function updateButtonVisibility() {
+  const userLoggedIn = localStorage.getItem('userLoggedIn');
+  const auth = firebase.auth();
+
+  const registerButton = document.getElementById('registerBTN');
+  const loginButton = document.getElementById('loginBTN');
+  const logoutButton = document.getElementById('logoutBTN');
+
+  if (userLoggedIn === 'true' && auth.currentUser) {
+    // User is logged in, hide register and login buttons, show logout button
+    registerButton.style.display = 'none';
+    loginButton.style.display = 'none';
+    logoutButton.style.display = 'block';
+  } else {
+    // User is logged out, show register and login buttons, hide logout button
+    registerButton.style.display = 'block';
+    loginButton.style.display = 'block';
+    logoutButton.style.display = 'none';
+  }
+}
 
 
 	    
