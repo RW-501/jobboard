@@ -685,6 +685,8 @@ function updateButtonVisibility() {
     loginButton.style.display = 'block';
     logoutButton.style.display = 'none';
     quickAddBTN.style.display = 'none';
+	  await updateButtonVisibility();
+	    
 	    }else{
 		    console.log('User is not logged in.');
 
