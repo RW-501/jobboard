@@ -284,9 +284,57 @@ width: 100%;
     <label for="jobPosition">Job Position:</label>
     <input type="text" id="jobPosition" placeholder="Enter job position" required>
   </div>
+<div class="form-group">
+  <label for="jobType">Job Type:</label>
+  <select id="jobType" name="jobType">
+    <option value="Remote">Remote</option>
+    <option value="Hybrid">Hybrid</option>
+    <!-- Add other default job types as needed -->
+  </select>
+</div>
+
+<div class="form-group">
+  <label>Additional Job Types:</label>
+  <div>
+    <input type="checkbox" id="contract" name="contract" value="contract">
+    <label for="contract">Contract</label>
+
+    <input type="checkbox" id="fullTime" name="fullTime" value="fullTime">
+    <label for="fullTime">Full Time</label>
+
+    <input type="checkbox" id="partTime" name="partTime" value="partTime">
+    <label for="partTime">Part Time</label>
+
+    <input type="checkbox" id="freelance" name="freelance" value="freelance">
+    <label for="freelance">Freelance</label>
+
+    <input type="checkbox" id="temporary" name="temporary" value="temporary">
+    <label for="temporary">Temporary</label>
+
+    <input type="checkbox" id="internship" name="internship" value="internship">
+    <label for="internship">Internship</label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label>Experience Level:</label>
+  <div>
+    <input type="checkbox" id="entryLevel" name="entryLevel" value="entryLevel">
+    <label for="entryLevel">Entry Level</label>
+
+    <input type="checkbox" id="midLevel" name="midLevel" value="midLevel">
+    <label for="midLevel">Mid Level</label>
+
+    <input type="checkbox" id="seniorLevel" name="seniorLevel" value="seniorLevel">
+    <label for="seniorLevel">Senior Level</label>
+  </div>
+</div>
+
+
+	  
     <div class="left">
 
-    <div class="form-group">
+    <div id="stateArea" class="form-group">
  <label for="stateDropdown">Select State:</label>
   <select id="stateDropdown" onchange="populateCities()">
       <!-- Add your state options here -->
@@ -343,7 +391,7 @@ width: 100%;
     </select>
   </div>
 	
-    <div class="form-group">
+    <div id="cityArea" class="form-group">
   <label for="cityDropdown">City:</label>
   <select id="cityDropdown">
     <!-- City options will be populated dynamically -->
@@ -479,7 +527,7 @@ function populateCities() {
     });
 
     // Display zip codes for the first city (optional)
-    displayZipCodes(selectedStateData.cities[0]);
+  //  displayZipCodes(selectedStateData.cities[0]);
   }
 }
 
@@ -491,7 +539,7 @@ function populateCities() {
       zipCodeDisplay.innerHTML = `Zip Codes: ${selectedCity.zipCodes.join(', ')}`;
     }
 
-
+let jobPostData = "";
 
   function submitJob() {
     // Add your logic to submit the job details
@@ -505,24 +553,78 @@ function populateCities() {
     const description = document.getElementById('description').value;
     const applicationLink = document.getElementById('applicationLink').value;
 
-    // You can now use these values to add the job posting to your system or database
-    console.log('Job details submitted:', {
-      companyName,
-      jobPosition,
-      state,
-      city,
-      jobCategory,
-      description,
-      applicationLink
-    });
 
-    // Close the popup after submission
+
+
+
+   // Job post data
+    const jobPostData = {
+      companyName: companyName,
+      jobPosition: jobPosition,
+      state: state,
+      city: city,
+      jobCategory: jobCategory,
+  jobType: jobType, // Add the jobType field
+      description: description,
+      applicationLink: applicationLink,
+      userId: userId,
+      dateTime: formattedDate,
+      // Add any other fields you need
+    };
+
+  
+addJobPost();
+	  
+	  // Close the popup after submission
     closePopup('addJobPopup');
   }
 
 
+async function addJobPost() {
+  try {
+    // Get user ID from Firebase
+    const userId = firebase.auth().currentUser.uid;
+
+    // Get current date and time
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString();
+
+ 
+
+    // Add the job post document to Firestore
+    const docRef = await firebase.firestore().collection('Job_Posts').add(jobPostData);
+
+    // Get the newly generated document ID and update it as 'id'
+    const docId = docRef.id;
+    await docRef.update({ id: docId });
+
+    console.log('Job post added successfully with ID:', docId);
+  } catch (error) {
+    console.error('Error adding job post:', error.message);
+  }
+}
 
 
+<script>
+document.getElementById('jobType').onchange = function() {
+  var selectedJobType = this.value;
+  
+  // Get the div elements
+  var stateArea = document.getElementById('stateArea');
+  var cityArea = document.getElementById('cityArea');
+  
+  // Check the selected job type
+  if (selectedJobType === 'Hybrid') {
+    // Show the divs
+    stateArea.style.display = 'block';
+    cityArea.style.display = 'block';
+  } else {
+    // Hide the divs
+    stateArea.style.display = 'none';
+    cityArea.style.display = 'none';
+  }
+};
+</script>
 
 
 
@@ -674,8 +776,9 @@ function openPopup(popupId) {
 
 // Call checkUserLogin on page load
 document.addEventListener('DOMContentLoaded', async () => {
-  await checkUserLogin();
-  updateButtonVisibility();
+ await checkUserLogin().then(() => {
+    updateButtonVisibility();
+  });
 });
 
 // Update button visibility based on user login status
