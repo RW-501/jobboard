@@ -677,13 +677,23 @@ function updateButtonVisibility() {
     logoutButton.style.display = 'block';
     quickAddBTN.style.display = 'block';
   } else {
-	      console.log('User is not logged in.');
+
+	    if (userLoggedIn === 'true' ||  auth.currentUser) {
+
+	      console.log('Ready To Login, Welcome Back');
+    registerButton.style.display = 'none';
+    loginButton.style.display = 'block';
+    logoutButton.style.display = 'none';
+    quickAddBTN.style.display = 'none';
+	    }else{
+		    console.log('User is not logged in.');
 
     // User is logged out, show register and login buttons, hide logout button
     registerButton.style.display = 'block';
     loginButton.style.display = 'block';
     logoutButton.style.display = 'none';
     quickAddBTN.style.display = 'none';
+	    }
   }
 }
 
