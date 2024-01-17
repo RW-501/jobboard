@@ -314,13 +314,20 @@ function closePopup(popupId) {
 
 
 
-// Add these functions to your existing JavaScript
+function setLoggedInFlag() {
+    localStorage.setItem('isLoggedIn', 'true');
+}
+
+function removeLoggedInFlag() {
+    localStorage.removeItem('isLoggedIn');
+}
 
 function registerAnonymously() {
     firebase.auth().signInAnonymously()
         .then((userCredential) => {
             // Handle successful anonymous registration
             console.log('Anonymous registration successful:', userCredential);
+            setLoggedInFlag();
             closePopup('registerPopup');
         })
         .catch((error) => {
@@ -337,6 +344,7 @@ function registerWithEmailPassword() {
         .then((userCredential) => {
             // Handle successful email/password registration
             console.log('Email/password registration successful:', userCredential);
+            setLoggedInFlag();
             closePopup('registerPopup');
         })
         .catch((error) => {
@@ -352,6 +360,7 @@ function registerWithGoogle() {
         .then((userCredential) => {
             // Handle successful Google registration
             console.log('Google registration successful:', userCredential);
+            setLoggedInFlag();
             closePopup('registerPopup');
         })
         .catch((error) => {
@@ -365,6 +374,7 @@ function loginAnonymously() {
         .then((userCredential) => {
             // Handle successful anonymous login
             console.log('Anonymous login successful:', userCredential);
+            setLoggedInFlag();
             closePopup('loginPopup');
         })
         .catch((error) => {
@@ -381,6 +391,7 @@ function loginWithEmailPassword() {
         .then((userCredential) => {
             // Handle successful email/password login
             console.log('Email/password login successful:', userCredential);
+            setLoggedInFlag();
             closePopup('loginPopup');
         })
         .catch((error) => {
@@ -396,6 +407,7 @@ function loginWithGoogle() {
         .then((userCredential) => {
             // Handle successful Google login
             console.log('Google login successful:', userCredential);
+            setLoggedInFlag();
             closePopup('loginPopup');
         })
         .catch((error) => {
@@ -403,6 +415,8 @@ function loginWithGoogle() {
             console.error('Google login failed:', error.message);
         });
 }
+
+
 
 
 	    
