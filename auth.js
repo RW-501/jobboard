@@ -1,3 +1,6 @@
+// auth.js
+
+
 /*
 // Function to log in with email and password
  const loginWithEmailPassword = async (email, password) => {
