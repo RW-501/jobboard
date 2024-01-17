@@ -647,6 +647,9 @@ function updateButtonVisibility() {
   const loginButton = document.getElementById('loginBTN');
   const logoutButton = document.getElementById('logoutBTN');
 
+		      console.log('userLoggedIn  ',userLoggedIn);
+		      console.log('auth.currentUser  ',auth.currentUser);
+
   if (userLoggedIn === 'true' && auth.currentUser) {
 	      console.log('User is logged in.');
 
