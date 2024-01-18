@@ -631,11 +631,6 @@ function filterByJobType(jobType) {
   renderJobPosts(filteredByJobType);
 }
 
-// Fetch job posts and initially render them
-getJobPosts().then(initialJobPosts => {
-  jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
-  renderJobPosts(jobPosts);
-});
 
 
 
@@ -984,6 +979,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     await checkUserLogin();
     updateButtonVisibility();
+
+    // Fetch job posts and initially render them
+    const initialJobPosts = await getJobPosts();
+    jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
+    renderJobPosts(jobPosts);
+  } catch (error) {
+    console.error('Error during DOMContentLoaded:', error);
+  }
+});
+
+
+	  
   } catch (error) {
     console.error('Error during initialization:', error.message);
   }
