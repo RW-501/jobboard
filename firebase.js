@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Get references to auth and firestore
 const auth = firebase.auth();
-const firestore = firebase.firestore();
+//const firestore = firebase.firestore();
 
 
 
