@@ -912,10 +912,14 @@ function openPopup(popupId) {
 
 // Call checkUserLogin on page load
 document.addEventListener('DOMContentLoaded', async () => {
- await checkUserLogin().then(() => {
+  try {
+    await checkUserLogin();
     updateButtonVisibility();
-  });
+  } catch (error) {
+    console.error('Error during initialization:', error.message);
+  }
 });
+
 
 // Update button visibility based on user login status
 function updateButtonVisibility() {
