@@ -166,6 +166,18 @@ width: 100%;
     padding: 2%;
 }
 
+    .form-group{
+    width: 100%;
+	    }
+
+
+    .form-group-inside{
+     display: flex;
+    width: 100%;
+    margin: 2%;
+}
+	    
+	    
         /* Add your additional form styles here */
 
         /* ... */
@@ -331,8 +343,8 @@ width: 100%;
 
 <div class="form-group">
   <label>Additional Job Types:</label>
-  <div>
-    <input type="checkbox" id="contract" name="contract" value="contract">
+<div class="form-group-inside">  
+<input type="checkbox" id="contract" name="contract" value="contract">
     <label for="contract">Contract</label>
 
     <input type="checkbox" id="fullTime" name="fullTime" value="fullTime">
@@ -340,7 +352,9 @@ width: 100%;
 
     <input type="checkbox" id="partTime" name="partTime" value="partTime">
     <label for="partTime">Part Time</label>
-
+  </div>
+	
+<div class="form-group-inside">  
     <input type="checkbox" id="freelance" name="freelance" value="freelance">
     <label for="freelance">Freelance</label>
 
@@ -354,8 +368,8 @@ width: 100%;
 
 <div class="form-group">
   <label>Experience Level:</label>
-  <div>
-    <input type="checkbox" id="entryLevel" name="entryLevel" value="entryLevel">
+<div class="form-group-inside">  
+	<input type="checkbox" id="entryLevel" name="entryLevel" value="entryLevel">
     <label for="entryLevel">Entry Level</label>
 
     <input type="checkbox" id="midLevel" name="midLevel" value="midLevel">
