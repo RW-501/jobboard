@@ -541,6 +541,8 @@ width: 100%;
 // Function to get job posts from Firestore
 async function getJobPosts() {
   try {
+	  const firestore = firebase.firestore();
+
     const jobPostsRef = firestore.collection('Job_Posts');
     const snapshot = await jobPostsRef.get();
     
