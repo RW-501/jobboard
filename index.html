@@ -998,7 +998,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	  
 
-
+ var userId = "";
 // Update button visibility based on user login status
 function updateButtonVisibility() {
   const userLoggedIn = localStorage.getItem('userLoggedIn');
@@ -1039,6 +1039,7 @@ welcomeArea.innerHTML = "Welcome Back";
     loginButton.style.display = 'block';
     logoutButton.style.display = 'none';
     quickAddBTN.style.display = 'none';
+		    userId = auth.currentUser.uid
 	    }
   }
 }
