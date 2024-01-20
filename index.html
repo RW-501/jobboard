@@ -851,8 +851,8 @@ document.getElementById('seniorLevel').checked = false;
   }
 
 
-async function addJobPost(jobPostData) {
-  try {
+ function addJobPost(jobPostData) {
+//  try {
     // Check if Firebase is initialized
     if (!firebase.apps.length) {
       console.log('Initializing Firebase...');
@@ -881,16 +881,17 @@ async function addJobPost(jobPostData) {
 
     // Add the job post document to Firestore
     console.log('Adding job post to Firestore...');
-    const docRef = await firestore.collection('Job_Posts').add(jobPostData);
+    const docRef =  firestore.collection('Job_Posts').add(jobPostData);
+ //   const docRef = await firestore.collection('Job_Posts').add(jobPostData);
 
     // Get the newly generated document ID and update it as 'id'
     const docId = docRef.id;
     await docRef.update({ id: docId });
 
     console.log('Job post added successfully with ID:', docId);
-  } catch (error) {
-    console.error('Error adding job post:', error.message);
-  }
+//  } catch (error) {
+    //console.error('Error adding job post:', error.message);
+  //}
 }
 
 
