@@ -100,7 +100,6 @@ function logoutUser() {
 
 
 
-  const badWords = ['shit', 's h i t', 'queer', 'q u e e r', 'gay', 'pussy', 'dick', 'nigger', 'n i g g e r', 'nigga', 'damn', 'd a m n', 'God damn', 'fucking','fuck', 'f u c k', 'b i t c h', 'bitch', 'cum'];
 
 function filterContent(content) {
   if (content == null) {
@@ -110,6 +109,7 @@ function filterContent(content) {
   // Convert content to a string if it's not already
 let  trimmedStr = String(content);
  content = trimmedStr.trim();
+  const badWords = ['shit', 's h i t', 'queer', 'q u e e r', 'gay', 'pussy', 'dick', 'nigger', 'n i g g e r', 'nigga', 'damn', 'd a m n', 'God damn', 'fucking','fuck', 'f u c k', 'b i t c h', 'bitch', 'cum'];
 
   // Perform case-insensitive matching for bad words
   const caseInsensitiveBadWords = badWords.map((word) => word.toLowerCase());
