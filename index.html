@@ -812,7 +812,7 @@ if (
 
 
   
-addJobPost();
+addJobPost(jobPostData);
 	  
 	  // Close the popup after submission
     closePopup('addJobPopup');
@@ -851,7 +851,7 @@ document.getElementById('seniorLevel').checked = false;
   }
 
 
-async function addJobPost() {
+async function addJobPost(jobPostData) {
   try {
     // Check if Firebase is initialized
     if (!firebase.apps.length) {
