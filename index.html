@@ -221,7 +221,24 @@ width: 100%;
     overflow-x: hidden;
 }
 
+    #jobPostsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
 
+    .jobPost {
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .postInfo {
+      font-size: 16px;
+      color: #333;
+    }
 	    
         /* Add your additional form styles here */
 
@@ -627,13 +644,57 @@ function renderJobPosts(jobPosts) {
   const jobPostsContainer = document.getElementById('jobPostsContainer');
   jobPostsContainer.innerHTML = ''; // Clear previous content
 
-  // Loop through job posts and create HTML elements
+  // Check if there are no results
+  if (jobPosts.length === 0) {
+    const noResultsElement = document.createElement('div');
+    noResultsElement.classList.add('noResults');
+    noResultsElement.textContent = 'No Results';
+    jobPostsContainer.appendChild(noResultsElement);
+    return;
+  }
+
+  // Loop through job posts and create styled HTML elements
   jobPosts.forEach(post => {
     const postElement = document.createElement('div');
-    postElement.textContent = `Company: ${post.companyName}, Position: ${post.jobPosition}, Date: ${post.dateTime}, Job Type: ${post.jobType}`;
+    postElement.classList.add('jobPost');
+
+    const postInfoElement = document.createElement('div');
+    postInfoElement.classList.add('postInfo');
+
+    // Create individual elements for better styling
+    const companyElement = document.createElement('div');
+    companyElement.classList.add('companyName');
+    companyElement.textContent = `Company: ${post.companyName}`;
+
+    const positionElement = document.createElement('div');
+    positionElement.classList.add('jobPosition');
+    positionElement.textContent = `Position: ${post.jobPosition}`;
+
+    const dateElement = document.createElement('div');
+    dateElement.classList.add('dateTime');
+    dateElement.textContent = `Date: ${post.dateTime}`;
+
+    const jobTypeElement = document.createElement('div');
+    jobTypeElement.classList.add('jobType');
+    jobTypeElement.textContent = `Job Type: ${post.jobType}`;
+
+    // Append individual elements to postInfoElement
+    postInfoElement.appendChild(companyElement);
+    postInfoElement.appendChild(positionElement);
+    postInfoElement.appendChild(dateElement);
+    postInfoElement.appendChild(jobTypeElement);
+
+    // Add click event listener to handle clicks
+    postInfoElement.addEventListener('click', () => {
+      // Handle click event, e.g., navigate to job details page
+      console.log('Job clicked:', post.id);
+    });
+
+    postElement.appendChild(postInfoElement);
     jobPostsContainer.appendChild(postElement);
   });
 }
+
 
 // Function to sort job posts by date (descending)
 function sortByDate() {
