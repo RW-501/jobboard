@@ -713,7 +713,7 @@ if (post.companyName){
     // Add click event listener to handle clicks
 postInfoElement.addEventListener('click', () => {
   const encodedJobId = encodeURIComponent(post.id);
-  const detailPageUrl = `detailPage.html?p=${encodedJobId}`;
+  const detailPageUrl = `job_post.html?p=${encodedJobId}`;
   window.location.href = detailPageUrl;
 });
 
