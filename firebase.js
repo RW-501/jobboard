@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Get references to auth and firestore
 const auth = firebase.auth();
-const firestore = firebase.firestore();
+var firestore = firebase.firestore();
 
    // Introduce a delay of 1000 milliseconds (1 second)
     setTimeout(() => {
