@@ -180,6 +180,27 @@ userInfoRef.get().then(async (userInfoSnapshot) => {
                 });
             });
         }
+
+
+
+
+// Call checkUserLogin on page load
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    await checkUserLogin();
+   // Introduce a delay of 1000 milliseconds (1 second)
+    setTimeout(() => {
+ //     updateButtonVisibility();
+    }, 1000);
+
+  } catch (error) {
+    console.error('Error during DOMContentLoaded:', error);
+  }
+});
+
+
+
+	    
     </script>
 
  <!-- Footer -->
