@@ -711,10 +711,12 @@ if (post.companyName){
     postInfoElement.appendChild(jobTypeElement);
 }
     // Add click event listener to handle clicks
-    postInfoElement.addEventListener('click', () => {
-      // Handle click event, e.g., navigate to job details page
-      console.log('Job clicked:', post.id);
-    });
+postInfoElement.addEventListener('click', () => {
+  const encodedJobId = encodeURIComponent(post.id);
+  const detailPageUrl = `detailPage.html?p=${encodedJobId}`;
+  window.location.href = detailPageUrl;
+});
+
 
     postElement.appendChild(postInfoElement);
     jobPostsContainer.appendChild(postElement);
