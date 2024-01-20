@@ -133,32 +133,32 @@ nav ul li a:hover {
         const user = auth.currentUser;
         if (user) {
             // Get user ID
-            const userId = user.uid;
-		consale.log(userId,"  userID");
+         const userId = user.uid;
+console.log(userId, "  userID");
 
-            // Reference to User_Info collection
-            const userInfoRef = firestore.collection('User_Info').doc(userId);
+// Reference to User_Info collection
+const userInfoRef = firestore.collection('User_Info').doc(userId);
 
-            // Reference to Job_Posts collection
-            const jobPostsRef = firestore.collection('Job_Posts');
+// Reference to Job_Posts collection
+const jobPostsRef = firestore.collection('Job_Posts');
 
-            // Display user's created job postings
-            userInfoRef.get().then((userInfoSnapshot) => {
-                const createdJobsList = document.getElementById('createdJobsList');
-                const createdJobs = userInfoSnapshot.data()?.createdJobs || [];
+// Display user's created job postings
+userInfoRef.get().then(async (userInfoSnapshot) => {
+    const createdJobsList = document.getElementById('createdJobsList');
+    const createdJobs = userInfoSnapshot.data()?.createdJobs || [];
 
+    for (const jobId of createdJobs) {
+        const jobSnapshot = await jobPostsRef.doc(jobId).get();
+        const jobData = jobSnapshot.data();
 
-for (const jobId of createdJobs) {
-    const jobSnapshot = await jobPostsRef.doc(jobId).get();
-    const jobData = jobSnapshot.data();
-                        if (jobData) {
-                            const jobElement = document.createElement('p');
-                            jobElement.textContent = `Title: ${jobData.jobPosition}, Company: ${jobData.companyName}`;
-                            createdJobsList.appendChild(jobElement);
-                        }
-                  
-                });
-            });
+        if (jobData) {
+            const jobElement = document.createElement('p');
+            jobElement.textContent = `Title: ${jobData.jobPosition}, Company: ${jobData.companyName}`;
+            createdJobsList.appendChild(jobElement);
+        }
+    }
+});
+
 
             // Display job postings viewed by the user
             const viewedJobsList = document.getElementById('viewedJobsList');
