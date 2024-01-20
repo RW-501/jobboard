@@ -194,7 +194,26 @@ function showMainMessage(message) {
 
 // Example usage:
 //showMainMessage("Thank you for rating the quiz!");
+function formatElapsedTime(dateString) {
+  const postDate = new Date(dateString);
+  const currentDate = new Date();
 
+  const elapsedMilliseconds = currentDate - postDate;
+  const elapsedSeconds = Math.floor(elapsedMilliseconds / 1000);
+  const elapsedMinutes = Math.floor(elapsedSeconds / 60);
+  const elapsedHours = Math.floor(elapsedMinutes / 60);
+
+  if (elapsedHours > 24) {
+    const days = Math.floor(elapsedHours / 24);
+    return `Posted: ${days} day${days !== 1 ? 's' : ''} ago`;
+  } else if (elapsedHours > 0) {
+    return `Posted: ${elapsedHours} hour${elapsedHours !== 1 ? 's' : ''} ago`;
+  } else if (elapsedMinutes > 0) {
+    return `Posted: ${elapsedMinutes} minute${elapsedMinutes !== 1 ? 's' : ''} ago`;
+  } else {
+    return 'Just posted';
+  }
+}
 
 function formatDateToMonthDay(dateString) {
   if (!dateString || typeof dateString !== 'string') {
