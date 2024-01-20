@@ -10,7 +10,7 @@ const firebaseConfig = {
   messagingSenderId: "1003334323082",
   appId: "1:1003334323082:web:df7ad24ffd7b16266dd673",
   measurementId: "G-MMFPWK3WV2"
-  };
+};
 
 firebase.initializeApp(firebaseConfig);
 
@@ -18,6 +18,26 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
+// Check if Firebase is already loaded and Firestore is available
+if (typeof firebase !== 'undefined' && typeof firebase.firestore === 'function') {
+  console.log('Firebase found.');
+} else {
+  console.log('Firebase scripts not found.');
+  // Load Firebase scripts dynamically if not found
+  const firebaseAppScript = document.createElement('script');
+  firebaseAppScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js';
+
+  const firestoreScript = document.createElement('script');
+  firestoreScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js';
+
+  const firebaseAuthScript = document.createElement('script');
+  firebaseAuthScript.src = 'https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js';
+
+  // Append the script elements to the document's head
+  document.head.appendChild(firebaseAppScript);
+  document.head.appendChild(firestoreScript);
+  document.head.appendChild(firebaseAuthScript);
+}
 
 
 
