@@ -854,8 +854,8 @@ document.getElementById('seniorLevel').checked = false;
   }
 
 
- function addJobPost(jobPostData) {
-//  try {
+async function addJobPost(jobPostData) {
+  try {
     // Check if Firebase is initialized
     if (!firebase.apps.length) {
       console.log('Initializing Firebase...');
@@ -876,25 +876,24 @@ document.getElementById('seniorLevel').checked = false;
 
     // Check if Firestore is initialized
     if (!firebase.firestore) {
-  //    console.error('Firestore is not available');
-    //  return;
+      console.error('Firestore is not available');
+      return;
     }
 
     const firestore = firebase.firestore();
 
     // Add the job post document to Firestore
     console.log('Adding job post to Firestore...');
-    const docRef =  firestore.collection('Job_Posts').add(jobPostData);
- //   const docRef = await firestore.collection('Job_Posts').add(jobPostData);
+    const docRef = await firestore.collection('Job_Posts').add(jobPostData);
 
     // Get the newly generated document ID and update it as 'id'
     const docId = docRef.id;
-     docRef.update({ id: docId });
+    await docRef.update({ id: docId });
 
     console.log('Job post added successfully with ID:', docId);
-//  } catch (error) {
-    //console.error('Error adding job post:', error.message);
-  //}
+  } catch (error) {
+    console.error('Error adding job post:', error.message);
+  }
 }
 
 
