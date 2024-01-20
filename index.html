@@ -853,12 +853,27 @@ document.getElementById('seniorLevel').checked = false;
 
 async function addJobPost() {
   try {
+    // Check if Firebase is initialized
+    if (!firebase.apps.length) {
+      // Initialize Firebase if not already initialized
+      firebase.initializeApp(firebaseConfig);
+    }
+
+    // Check if the user is logged in
+    const user = firebase.auth().currentUser;
+    if (!user) {
+      console.error('User not logged in');
+      return;
+    }
+
     // Get user ID from Firebase
-    const userId = firebase.auth().currentUser.uid;
+    const userId = user.uid;
 
-
-
- 
+    // Check if Firestore is initialized
+    if (!firebase.firestore) {
+      console.error('Firestore is not available');
+      return;
+    }
 
     // Add the job post document to Firestore
     const docRef = await firebase.firestore().collection('Job_Posts').add(jobPostData);
@@ -872,6 +887,7 @@ async function addJobPost() {
     console.error('Error adding job post:', error.message);
   }
 }
+
 
 
 document.getElementById('jobType').onchange = function() {
