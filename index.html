@@ -975,7 +975,12 @@ async function addJobPost(jobPostData) {
     // Get the newly generated document ID and update it as 'id'
     const docId = docRef.id;
     await docRef.update({ id: docId });
-
+	  
+    // Fetch job posts and initially render them
+    const initialJobPosts = await getJobPosts();
+    jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
+    renderJobPosts(jobPosts);
+	  
     console.log('Job post added successfully with ID:', docId);
   } catch (error) {
     console.error('Error adding job post:', error.message);
