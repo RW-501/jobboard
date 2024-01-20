@@ -146,15 +146,16 @@ nav ul li a:hover {
                 const createdJobsList = document.getElementById('createdJobsList');
                 const createdJobs = userInfoSnapshot.data()?.createdJobs || [];
 
-                createdJobs.forEach((jobId) => {
-                    jobPostsRef.doc(jobId).get().then((jobSnapshot) => {
-                        const jobData = jobSnapshot.data();
+
+for (const jobId of createdJobs) {
+    const jobSnapshot = await jobPostsRef.doc(jobId).get();
+    const jobData = jobSnapshot.data();
                         if (jobData) {
                             const jobElement = document.createElement('p');
                             jobElement.textContent = `Title: ${jobData.jobPosition}, Company: ${jobData.companyName}`;
                             createdJobsList.appendChild(jobElement);
                         }
-                    });
+                  
                 });
             });
 
