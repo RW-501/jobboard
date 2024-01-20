@@ -697,18 +697,20 @@ function renderJobPosts(jobPosts) {
 
     const dateElement = document.createElement('div');
     dateElement.classList.add('dateTime');
-    dateElement.textContent = `Date: ${post.dateTime}`;
+let postedTime = formatElapsedTime(post.dateTime);
+    dateElement.textContent = `Posted: ${postedTime}`;
 
     const jobTypeElement = document.createElement('div');
     jobTypeElement.classList.add('jobType');
     jobTypeElement.textContent = `Job Type: ${post.jobType}`;
+if (companyName) {
 
     // Append individual elements to postInfoElement
     postInfoElement.appendChild(companyElement);
     postInfoElement.appendChild(positionElement);
     postInfoElement.appendChild(dateElement);
     postInfoElement.appendChild(jobTypeElement);
-
+}
     // Add click event listener to handle clicks
     postInfoElement.addEventListener('click', () => {
       // Handle click event, e.g., navigate to job details page
