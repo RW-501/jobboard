@@ -886,7 +886,7 @@ document.getElementById('seniorLevel').checked = false;
 
     // Get the newly generated document ID and update it as 'id'
     const docId = docRef.id;
-    await docRef.update({ id: docId });
+     docRef.update({ id: docId });
 
     console.log('Job post added successfully with ID:', docId);
 //  } catch (error) {
