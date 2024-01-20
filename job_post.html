@@ -149,6 +149,11 @@ nav ul li a:hover {
     a:hover {
       text-decoration: underline;
     }
+   #description_Container{
+    color: white;
+    text-align: center;
+
+   }
   </style>
 
   
@@ -156,15 +161,15 @@ nav ul li a:hover {
 
 <header>
     <div class="logo">
-        <a href="../../"><h1>Remote Jobs</h1></a>
+        <a href="/../../"><h1>Remote Jobs</h1></a>
     </div>
     <nav>
         <ul>
             <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
             <li id="loginBTN" onclick="openPopup('loginPopup')">Login</li>
-            <li><a href="../../dashboard">Dashboard</a></li>
-            <li><a href="../../about">About</a></li>
-            <li><a href="../../contact">Contact</a></li>
+            <li><a href="/../../dashboard">Dashboard</a></li>
+            <li><a href="/../../about">About</a></li>
+            <li><a href="/../../contact">Contact</a></li>
             <li id="logoutBTN" onclick="logoutUser()">Logout</li>
         </ul>
     </nav>
@@ -173,7 +178,9 @@ nav ul li a:hover {
 
 
   <div id="jobDetailsContainer"></div>
-  
+    <div id="description_Container">
+RemoteJobs is a dynamic job search engine dedicated to curating a comprehensive list of third-party job postings. We provide direct links to opportunities on external job sites and are not directly affiliated with any specific employer. Please note that when applying for jobs, you may be redirected to third-party websites. All company names mentioned on our platform are the registered trademarks of their respective owners. RemoteJobs maintains no affiliation with the owners of these trade names or trademarks. Compensation details, whether hourly or salary-based, are sourced from the employer's job posting, publicly available information from current or former employees, or are estimated using publicly available salary reports and statistical methods. Our goal is to empower job seekers with valuable insights and opportunities in the ever-evolving landscape of remote work.
+  </div>
     <!-- Footer -->
     <footer>
         <div class="">
