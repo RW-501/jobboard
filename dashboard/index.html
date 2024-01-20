@@ -134,6 +134,7 @@ nav ul li a:hover {
         if (user) {
             // Get user ID
             const userId = user.uid;
+		consale.log(userId,"  userID");
 
             // Reference to User_Info collection
             const userInfoRef = firestore.collection('User_Info').doc(userId);
