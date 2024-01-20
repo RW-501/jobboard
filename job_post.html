@@ -233,15 +233,16 @@ nav ul li a:hover {
     <p><strong>Category:</strong> ${jobPost.jobCategory}</p>
 ${jobPost.jobType === 'Remote' ? '' : `<p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>`}
     <div class="details-box">
-      <p><strong>Contract:</strong> ${jobPost.contract ? 'Yes' : 'No'}</p>
-      <p><strong>Full Time:</strong> ${jobPost.fullTime ? 'Yes' : 'No'}</p>
-      <p><strong>Part Time:</strong> ${jobPost.partTime ? 'Yes' : 'No'}</p>
-      <p><strong>Freelance:</strong> ${jobPost.freelance ? 'Yes' : 'No'}</p>
-      <p><strong>Temporary:</strong> ${jobPost.temporary ? 'Yes' : 'No'}</p>
-      <p><strong>Internship:</strong> ${jobPost.internship ? 'Yes' : 'No'}</p>
-      <p><strong>Entry Level:</strong> ${jobPost.entryLevel ? 'Yes' : 'No'}</p>
-      <p><strong>Mid Level:</strong> ${jobPost.midLevel ? 'Yes' : 'No'}</p>
-      <p><strong>Senior Level:</strong> ${jobPost.seniorLevel ? 'Yes' : 'No'}</p>
+${jobPost.contract ? `<p><strong>Contract:</strong> Yes</p>` : ''}
+${jobPost.fullTime ? `<p><strong>Full Time:</strong> Yes</p>` : ''}
+${jobPost.partTime ? `<p><strong>Part Time:</strong> Yes</p>` : ''}
+${jobPost.freelance ? `<p><strong>Freelance:</strong> Yes</p>` : ''}
+${jobPost.temporary ? `<p><strong>Temporary:</strong> Yes</p>` : ''}
+${jobPost.internship ? `<p><strong>Internship:</strong> Yes</p>` : ''}
+${jobPost.entryLevel ? `<p><strong>Entry Level:</strong> Yes</p>` : ''}
+${jobPost.midLevel ? `<p><strong>Mid Level:</strong> Yes</p>` : ''}
+${jobPost.seniorLevel ? `<p><strong>Senior Level:</strong> Yes</p>` : ''}
+
     </div>
 
    <p><strong>Description:</strong> ${jobPost.description}</p>
