@@ -131,6 +131,10 @@ nav ul li a:hover {
 
         // Check if the user is logged in
         const user = auth.currentUser;
+
+	    
+	    console.log(user, "  userID");
+
         if (user) {
             // Get user ID
          const userId = user.uid;
