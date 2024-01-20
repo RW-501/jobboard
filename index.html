@@ -791,6 +791,30 @@ addJobPost();
 	  
 	  // Close the popup after submission
     closePopup('addJobPopup');
+
+	  // Clear and reset the form
+document.getElementById('companyName').value = '';
+document.getElementById('jobPosition').value = '';
+document.getElementById('stateDropdown').value = ''; // Reset the state dropdown
+document.getElementById('cityDropdown').value = ''; // Reset the city dropdown
+document.getElementById('jobCategory').value = '';
+document.getElementById('description').value = '';
+document.getElementById('applicationLink').value = '';
+document.getElementById('jobType').value = 'Remote'; // Reset jobType to the default value
+
+// Reset additional job types checkboxes
+document.getElementById('contract').checked = false;
+document.getElementById('fullTime').checked = false;
+document.getElementById('partTime').checked = false;
+document.getElementById('freelance').checked = false;
+document.getElementById('temporary').checked = false;
+document.getElementById('internship').checked = false;
+
+// Reset experience level checkboxes
+document.getElementById('entryLevel').checked = false;
+document.getElementById('midLevel').checked = false;
+document.getElementById('seniorLevel').checked = false;
+
   }
 
 
