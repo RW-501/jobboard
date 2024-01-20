@@ -19,11 +19,80 @@
             color: #666;
         }
 
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    list-style: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex; /* Add this line to make the list items flex items */
+            cursor: pointer;
+
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
         .disclaimer {
             margin-top: 20px;
         }
     </style>
 </head>
+
+    
+<header>
+    <div class="logo">
+        <a href="/jobboard"><h1>Remote Jobs</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
+            <li id="loginBTN" onclick="openPopup('loginPopup')">Login</li>
+            <li><a href="/jobboard/dashboard">Dashboard</a></li>
+            <li><a href="/jobboard/about">About</a></li>
+            <li><a href="/jobboard/contact">Contact</a></li>
+            <li id="logoutBTN" onclick="logoutUser()">Logout</li>
+        </ul>
+    </nav>
+</header>
 <body>
     <h1>About RemoteJobs</h1>
 
@@ -41,5 +110,15 @@
     <div class="disclaimer">
         <p><strong>Disclaimer:</strong> RemoteJobs is a job search engine, and when you click on job listings, you may be redirected to third-party websites for the application process. We are not responsible for the content on external sites or the application process.</p>
     </div>
+
+
+ <!-- Footer -->
+    <footer>
+        <div class="">
+            <p>&copy; 2024 Job Board All rights reserved. <a id="LRP" href='https://rw-501.github.io/Portfolio/'>Dev Portfolio</a></p>
+        </div>
+    </footer>
+
+    
 </body>
 </html>
