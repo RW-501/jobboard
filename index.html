@@ -758,7 +758,10 @@ let jobPostData = "";
   var midLevel = document.getElementById('midLevel').checked;
   var seniorLevel = document.getElementById('seniorLevel').checked;
 
-
+    // Get current date and time
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString();
+	  
    // Job post data
   jobPostData = {
   companyName: companyName,
@@ -796,9 +799,7 @@ async function addJobPost() {
     // Get user ID from Firebase
     const userId = firebase.auth().currentUser.uid;
 
-    // Get current date and time
-    const currentDate = new Date();
-    const formattedDate = currentDate.toISOString();
+
 
  
 
