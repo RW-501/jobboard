@@ -22,7 +22,8 @@
   <script>
 
     document.addEventListener('DOMContentLoaded', async () => {
-      const jobId = getParameterByName('p');
+      let jobId = getParameterByName('p');
+     jobId = filterContent(jobId);
       
       if (jobId) {
         try {
