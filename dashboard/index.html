@@ -128,7 +128,7 @@ nav ul li a:hover {
 
 	
     <script>
-
+function loadPage(){
         // Check if the user is logged in
         const user = auth.currentUser;
 
@@ -181,7 +181,7 @@ userInfoRef.get().then(async (userInfoSnapshot) => {
             });
         }
 
-
+}
 
 
 // Call checkUserLogin on page load
@@ -192,7 +192,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     setTimeout(() => {
  //     updateButtonVisibility();
     }, 1000);
-
+loadPage();
+	  
   } catch (error) {
     console.error('Error during DOMContentLoaded:', error);
   }
