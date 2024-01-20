@@ -231,7 +231,7 @@ nav ul li a:hover {
     <p><strong>Date Posted:</strong> ${date}</p>
     <p><strong>Job Type:</strong> ${jobPost.jobType}</p>
     <p><strong>Category:</strong> ${jobPost.jobCategory}</p>
-   <p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>
+${jobPost.jobType === 'Remote' ? '' : `<p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>`}
     <div class="details-box">
       <p><strong>Contract:</strong> ${jobPost.contract ? 'Yes' : 'No'}</p>
       <p><strong>Full Time:</strong> ${jobPost.fullTime ? 'Yes' : 'No'}</p>
