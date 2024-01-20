@@ -16,7 +16,11 @@ firebase.initializeApp(firebaseConfig);
 
 // Get references to auth and firestore
 const auth = firebase.auth();
+
+   // Introduce a delay of 1000 milliseconds (1 second)
+    setTimeout(() => {
 const firestore = firebase.firestore();
+    }, 1000);
 
 // Check if Firebase is already loaded and Firestore is available
 if (typeof firebase !== 'undefined' && typeof firebase.firestore === 'function') {
