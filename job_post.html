@@ -80,7 +80,7 @@ nav ul li a:hover {
 
    /* Add these styles to your CSS file or style tag */
 
-.job-details-box {
+.details-box {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -89,7 +89,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.job-details-box h2 {
+.details-box h2 {
   color: #333;
 }
 
@@ -224,7 +224,6 @@ nav ul li a:hover {
     function renderJobDetails(jobPost) {
       const jobDetailsContainer = document.getElementById('jobDetailsContainer');
       const detailsElement = document.createElement('div');
-  detailsElement.classList.add('job-details-box'); // Add a class for styling
 
       let date =  formatDateToMonthDay(jobPost.dateTime);
   detailsElement.innerHTML = `
