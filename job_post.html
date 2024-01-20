@@ -78,7 +78,46 @@ nav ul li a:hover {
         }
 
 
-   
+   /* Add these styles to your CSS file or style tag */
+
+.job-details-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-details-box h2 {
+  color: #333;
+}
+
+.details-box {
+  margin-top: 15px;
+}
+
+.details-box p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.details-box strong {
+  color: #333;
+}
+
+/* Add more styles as needed */
+
+/* Optional: Add transitions for a smoother effect */
+.details-box p {
+  transition: color 0.3s ease;
+}
+
+.details-box p:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
+
 
     #jobDetailsContainer {
       max-width: 800px;
@@ -185,24 +224,30 @@ nav ul li a:hover {
     function renderJobDetails(jobPost) {
       const jobDetailsContainer = document.getElementById('jobDetailsContainer');
       const detailsElement = document.createElement('div');
-      
+  detailsElement.classList.add('job-details-box'); // Add a class for styling
+
+      let date =  formatDateToMonthDay(jobPost.dateTime);
   detailsElement.innerHTML = `
     <h2>${jobPost.jobPosition} at ${jobPost.companyName}</h2>
-    <p><strong>Date Posted:</strong> ${jobPost.dateTime}</p>
+    <p><strong>Date Posted:</strong> ${date}</p>
     <p><strong>Job Type:</strong> ${jobPost.jobType}</p>
     <p><strong>Category:</strong> ${jobPost.jobCategory}</p>
-    <p><strong>Description:</strong> ${jobPost.description}</p>
+   <p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>
+    <div class="details-box">
+      <p><strong>Contract:</strong> ${jobPost.contract ? 'Yes' : 'No'}</p>
+      <p><strong>Full Time:</strong> ${jobPost.fullTime ? 'Yes' : 'No'}</p>
+      <p><strong>Part Time:</strong> ${jobPost.partTime ? 'Yes' : 'No'}</p>
+      <p><strong>Freelance:</strong> ${jobPost.freelance ? 'Yes' : 'No'}</p>
+      <p><strong>Temporary:</strong> ${jobPost.temporary ? 'Yes' : 'No'}</p>
+      <p><strong>Internship:</strong> ${jobPost.internship ? 'Yes' : 'No'}</p>
+      <p><strong>Entry Level:</strong> ${jobPost.entryLevel ? 'Yes' : 'No'}</p>
+      <p><strong>Mid Level:</strong> ${jobPost.midLevel ? 'Yes' : 'No'}</p>
+      <p><strong>Senior Level:</strong> ${jobPost.seniorLevel ? 'Yes' or 'No'}</p>
+    </div>
+
+   <p><strong>Description:</strong> ${jobPost.description}</p>
     <p><strong>Application Link:</strong> <a href="${jobPost.applicationLink}" target="_blank">${jobPost.applicationLink}</a></p>
-    <p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>
-    <p><strong>Contract:</strong> ${jobPost.contract ? 'Yes' : 'No'}</p>
-    <p><strong>Full Time:</strong> ${jobPost.fullTime ? 'Yes' : 'No'}</p>
-    <p><strong>Part Time:</strong> ${jobPost.partTime ? 'Yes' : 'No'}</p>
-    <p><strong>Freelance:</strong> ${jobPost.freelance ? 'Yes' : 'No'}</p>
-    <p><strong>Temporary:</strong> ${jobPost.temporary ? 'Yes' : 'No'}</p>
-    <p><strong>Internship:</strong> ${jobPost.internship ? 'Yes' : 'No'}</p>
-    <p><strong>Entry Level:</strong> ${jobPost.entryLevel ? 'Yes' : 'No'}</p>
-    <p><strong>Mid Level:</strong> ${jobPost.midLevel ? 'Yes' : 'No'}</p>
-    <p><strong>Senior Level:</strong> ${jobPost.seniorLevel ? 'Yes' : 'No'}</p>
+ 
     <!-- Add more details as needed -->
   `;
 
