@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Posting Details</title>
+</head>
+<body>
+
+  <div id="jobDetailsContainer"></div>
+
+    <!-- Include Firebase and Auth Scripts -->
+  <script  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<!-- Include DOMPurify from a CDN -->
+<script src="https://cdn.jsdelivr.net/npm/dompurify@2"></script>
+    <script defer src="firebase.js"></script>
+    <script defer src="auth.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const jobId = getParameterByName('p');
+      
+      if (jobId) {
+        try {
+          const jobPost = await getJobPost(jobId);
+          renderJobDetails(jobPost);
+        } catch (error) {
+          console.error('Error getting job post details:', error);
+        }
+      } else {
+        console.error('Job ID not provided in the URL');
+      }
+    });
+
+    async function getJobPost(jobId) {
+      const jobPostRef = firestore.collection('Job_Posts').doc(jobId);
+      const snapshot = await jobPostRef.get();
+
+      if (snapshot.exists) {
+        return { id: snapshot.id, ...snapshot.data() };
+      } else {
+        throw new Error('Job post not found');
+      }
+    }
+
+    function renderJobDetails(jobPost) {
+      const jobDetailsContainer = document.getElementById('jobDetailsContainer');
+      const detailsElement = document.createElement('div');
+      
+      detailsElement.innerHTML = `
+        <h2>${jobPost.jobPosition} at ${jobPost.companyName}</h2>
+        <p><strong>Date Posted:</strong> ${jobPost.dateTime}</p>
+        <p><strong>Job Type:</strong> ${jobPost.jobType}</p>
+        <p><strong>Description:</strong> ${jobPost.description}</p>
+        <p><strong>Application Link:</strong> <a href="${jobPost.applicationLink}" target="_blank">${jobPost.applicationLink}</a></p>
+        <!-- Add more details as needed -->
+      `;
+
+      jobDetailsContainer.appendChild(detailsElement);
+    }
+
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[[]]/g, '\\$&');
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+      const results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  </script>
+
+</body>
+</html>
