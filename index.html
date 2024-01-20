@@ -1174,6 +1174,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const initialJobPosts = await getJobPosts();
     jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
     renderJobPosts(jobPosts);
+	  auth = firebase.auth();
   } catch (error) {
     console.error('Error during DOMContentLoaded:', error);
   }
@@ -1181,12 +1182,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 	  
+  var auth = firebase.auth();
 
  var userId = "";
 // Update button visibility based on user login status
 function updateButtonVisibility() {
   const userLoggedIn = localStorage.getItem('userLoggedIn');
-  const auth = firebase.auth();
 
   const registerButton = document.getElementById('registerBTN');
   const loginButton = document.getElementById('loginBTN');
