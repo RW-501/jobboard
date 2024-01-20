@@ -731,6 +731,13 @@ function populateCities() {
 let jobPostData = "";
 
   function submitJob() {
+
+	  const user = firebase.auth().currentUser;
+
+if (user) {
+  // Access the user's information
+  const userId = user.uid;
+
     // Add your logic to submit the job details
     // Retrieve values from input fields and perform the necessary actions
     // For example: 
@@ -761,14 +768,32 @@ let jobPostData = "";
     // Get current date and time
     const currentDate = new Date();
     const formattedDate = currentDate.toISOString();
-	  
-   // Job post data
-  jobPostData = {
-  companyName: companyName,
-  jobPosition: jobPosition,
+
+
+// Validate and filter each field
+const validCompanyName = companyName.trim() !== '' ? filterContent(companyName) : null;
+const validJobPosition = jobPosition.trim() !== '' ? filterContent(jobPosition) : null;
+const validJobCategory = jobCategory.trim() !== '' ? filterContent(jobCategory) : null;
+const validDescription = description.trim() !== '' ? filterContent(description) : null;
+const validApplicationLink = applicationLink.trim() !== '' ? filterContent(applicationLink) : null;
+
+// Check if all fields are valid
+if (
+  validCompanyName !== null &&
+  validJobPosition !== null &&
+  validJobCategory !== null &&
+  validDescription !== null &&
+  validApplicationLink !== null
+) {
+  // All fields are valid, proceed with submitting the job post
+  const jobPostData = {
+    companyName: validCompanyName,
+    jobPosition: validJobPosition,
+    jobCategory: validJobCategory,
+    description: validDescription,
+    applicationLink: validApplicationLink,
   state: state,
   city: city,
-  jobCategory: jobCategory,
   jobType: jobType,
   contract: contract, // Add the contract field
   fullTime: fullTime, // Add the fullTime field
@@ -779,8 +804,6 @@ let jobPostData = "";
   entryLevel: entryLevel, // Add the entryLevel field
   midLevel: midLevel, // Add the midLevel field
   seniorLevel: seniorLevel, // Add the seniorLevel field
-  description: description,
-  applicationLink: applicationLink,
   userId: userId,
   dateTime: formattedDate,
 };
@@ -814,7 +837,15 @@ document.getElementById('internship').checked = false;
 document.getElementById('entryLevel').checked = false;
 document.getElementById('midLevel').checked = false;
 document.getElementById('seniorLevel').checked = false;
+} else {
+  // Display an error message or handle invalid fields as needed
+  console.error('Some fields are invalid.');
+}
 
+} else {
+	  console.error('No user signed in.');
+}
+	
   }
 
 
