@@ -874,7 +874,7 @@ async function addJobPost(jobPostData) {
     // Check if Firestore is initialized
     if (!firebase.firestore) {
       console.error('Firestore is not available');
-      return;
+    //  return;
     }
 
     const firestore = firebase.firestore();
