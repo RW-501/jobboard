@@ -190,10 +190,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     await checkUserLogin();
    // Introduce a delay of 1000 milliseconds (1 second)
     setTimeout(() => {
- //     updateButtonVisibility();
+      loadPage();
     }, 1000);
-loadPage();
-	  
+
+	    console.log( "  ??????");
+
   } catch (error) {
     console.error('Error during DOMContentLoaded:', error);
   }
