@@ -855,6 +855,7 @@ async function addJobPost(jobPostData) {
   try {
     // Check if Firebase is initialized
     if (!firebase.apps.length) {
+      console.log('Initializing Firebase...');
       // Initialize Firebase if not already initialized
       firebase.initializeApp(firebaseConfig);
     }
@@ -868,16 +869,19 @@ async function addJobPost(jobPostData) {
 
     // Get user ID from Firebase
     const userId = user.uid;
+    console.log('User ID:', userId);
 
     // Check if Firestore is initialized
     if (!firebase.firestore) {
-     // console.error('Firestore is not available');
-    //  return;
-	 const firestore = firebase.firestore();   
+      console.error('Firestore is not available');
+      return;
     }
 
+    const firestore = firebase.firestore();
+
     // Add the job post document to Firestore
-    const docRef = await firebase.firestore().collection('Job_Posts').add(jobPostData);
+    console.log('Adding job post to Firestore...');
+    const docRef = await firestore.collection('Job_Posts').add(jobPostData);
 
     // Get the newly generated document ID and update it as 'id'
     const docId = docRef.id;
@@ -888,6 +892,7 @@ async function addJobPost(jobPostData) {
     console.error('Error adding job post:', error.message);
   }
 }
+
 
 
 
