@@ -703,7 +703,7 @@ let postedTime = formatElapsedTime(post.dateTime);
     const jobTypeElement = document.createElement('div');
     jobTypeElement.classList.add('jobType');
     jobTypeElement.textContent = `Job Type: ${post.jobType}`;
-if (!companyName) {
+if (!companyName || companyName == "" || companyName == undefined || companyName == null){
 }else{
     // Append individual elements to postInfoElement
     postInfoElement.appendChild(companyElement);
