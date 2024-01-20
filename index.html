@@ -1045,8 +1045,10 @@ function openPopup(popupId) {
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     await checkUserLogin();
-    updateButtonVisibility();
-
+   // Introduce a delay of 1000 milliseconds (1 second)
+    setTimeout(() => {
+      updateButtonVisibility();
+    }, 1000);
     // Fetch job posts and initially render them
     const initialJobPosts = await getJobPosts();
     jobPosts = initialJobPosts; // Assuming jobPosts is a global variable
