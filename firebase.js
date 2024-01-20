@@ -52,7 +52,7 @@ function checkUserLogin() {
     return new Promise((resolve, reject) => {
         const userLoggedIn = localStorage.getItem('userLoggedIn');
         console.log('userLoggedIn', userLoggedIn);
-            const auth = firebase.auth();
+             auth = firebase.auth();
 
         if (userLoggedIn === 'true' && auth ) {
 
