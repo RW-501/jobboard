@@ -5,9 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Posting Details</title>
 </head>
+ <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    #jobDetailsContainer {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    strong {
+      color: #333;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  
 <body>
 
+<header>
+    <div class="logo">
+        <a href="/RemoteJobs/"><h1>Remote Jobs</h1></a>
+    </div>
+    <nav>
+        <ul>
+            <li id="registerBTN" onclick="openPopup('registerPopup')">Register</li>
+            <li id="loginBTN" onclick="openPopup('loginPopup')">Login</li>
+            <li><a href="/RemoteJobs/dashboard">Dashboard</a></li>
+            <li><a href="/RemoteJobs/about">About</a></li>
+            <li><a href="/RemoteJobs/contact">Contact</a></li>
+            <li id="logoutBTN" onclick="logoutUser()">Logout</li>
+        </ul>
+    </nav>
+</header>
+
+
+
   <div id="jobDetailsContainer"></div>
+  
+    <!-- Footer -->
+    <footer>
+        <div class="">
+            <p>&copy; 2024 Job Board All rights reserved. <a id="LRP" href='https://rw-501.github.io/Portfolio/'>Dev Portfolio</a></p>
+        </div>
+    </footer>
+
 
     <!-- Include Firebase and Auth Scripts -->
   <script  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -52,14 +119,25 @@
       const jobDetailsContainer = document.getElementById('jobDetailsContainer');
       const detailsElement = document.createElement('div');
       
-      detailsElement.innerHTML = `
-        <h2>${jobPost.jobPosition} at ${jobPost.companyName}</h2>
-        <p><strong>Date Posted:</strong> ${jobPost.dateTime}</p>
-        <p><strong>Job Type:</strong> ${jobPost.jobType}</p>
-        <p><strong>Description:</strong> ${jobPost.description}</p>
-        <p><strong>Application Link:</strong> <a href="${jobPost.applicationLink}" target="_blank">${jobPost.applicationLink}</a></p>
-        <!-- Add more details as needed -->
-      `;
+  detailsElement.innerHTML = `
+    <h2>${jobPost.jobPosition} at ${jobPost.companyName}</h2>
+    <p><strong>Date Posted:</strong> ${jobPost.dateTime}</p>
+    <p><strong>Job Type:</strong> ${jobPost.jobType}</p>
+    <p><strong>Category:</strong> ${jobPost.jobCategory}</p>
+    <p><strong>Description:</strong> ${jobPost.description}</p>
+    <p><strong>Application Link:</strong> <a href="${jobPost.applicationLink}" target="_blank">${jobPost.applicationLink}</a></p>
+    <p><strong>Location:</strong> ${jobPost.city}, ${jobPost.state}</p>
+    <p><strong>Contract:</strong> ${jobPost.contract ? 'Yes' : 'No'}</p>
+    <p><strong>Full Time:</strong> ${jobPost.fullTime ? 'Yes' : 'No'}</p>
+    <p><strong>Part Time:</strong> ${jobPost.partTime ? 'Yes' : 'No'}</p>
+    <p><strong>Freelance:</strong> ${jobPost.freelance ? 'Yes' : 'No'}</p>
+    <p><strong>Temporary:</strong> ${jobPost.temporary ? 'Yes' : 'No'}</p>
+    <p><strong>Internship:</strong> ${jobPost.internship ? 'Yes' : 'No'}</p>
+    <p><strong>Entry Level:</strong> ${jobPost.entryLevel ? 'Yes' : 'No'}</p>
+    <p><strong>Mid Level:</strong> ${jobPost.midLevel ? 'Yes' : 'No'}</p>
+    <p><strong>Senior Level:</strong> ${jobPost.seniorLevel ? 'Yes' : 'No'}</p>
+    <!-- Add more details as needed -->
+  `;
 
       jobDetailsContainer.appendChild(detailsElement);
     }
