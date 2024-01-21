@@ -131,13 +131,19 @@ nav ul li a:hover {
 function loadPage(){
         // Check if the user is logged in
         const user = auth.currentUser;
+	
 
 	    
 	    console.log(user, "  userID");
 
         if (user) {
             // Get user ID
+		if(!user){
+const userId = auth['W'];
+
+		}else{
          const userId = user.uid;
+		}
 console.log(userId, "  userID");
 
 // Reference to User_Info collection
