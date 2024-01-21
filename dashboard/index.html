@@ -137,12 +137,11 @@ function loadPage(){
 	    console.log(user, "  userID");
 
         if (user) {
-            // Get user ID
-		if(!user){
-const userId = auth['W'];
+               const userId = user.uid;
 
 		}else{
-         const userId = user.uid;
+	const userId = auth['W'];
+
 		}
 console.log(userId, "  userID");
 
@@ -185,7 +184,7 @@ userInfoRef.get().then(async (userInfoSnapshot) => {
                     }
                 });
             });
-        }
+        
 
 }
 
