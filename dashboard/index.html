@@ -132,15 +132,15 @@ function loadPage(){
         // Check if the user is logged in
         const user = auth.currentUser;
 	
-
+ let userId;
 	    
-	    console.log(user, "  userID");
+	    console.log(user, "  user");
 
         if (user) {
-               const userId = user.uid;
+                userId = user.uid;
 
 		}else{
-	const userId = auth['W'];
+	 userId = auth['W'];
 
 		}
 console.log(userId, "  userID");
